@@ -1,0 +1,17 @@
+/UnityProj/CommonLib/SpellSystem/obj
+/UnityProj/CommonLib/ClientNetwork/obj
+/UnityProj/CommonLib/CommonUtils/obj
+/UnityProj/CommonLib/ExcelTools/GameDataChecker/obj
+/UnityProj/CommonLib/ExcelTools/GameDataExport/obj
+/UnityProj/CommonLib/GameDataDefine/obj
+/UnityProj/CommonLib/GameDataRuntime/obj
+/UnityProj/CommonLib/Logger/obj
+/UnityProj/CommonLib/ResourceCache/obj
+/UnityProj/CommonLib/ResourceCacheBehaviour/obj
+/UnityProj/CommonLib/SequenceLine/obj
+/UnityProj/CommonLib/StateController/obj
+/UnityProj/Library
+/UnityProj/obj
+/UnityProj/Temp
+/UnityProj/CommonLib/bin
+/UnityProj/CommonLib/ExcelTools/bin

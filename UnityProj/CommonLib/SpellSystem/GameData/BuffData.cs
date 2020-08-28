@@ -1,7 +1,8 @@
 ﻿
+using Nullspace;
 using System.Collections.Generic;
 
-namespace Nullspace
+namespace GameData
 {
     public class BuffData : GameDataMap<int, BuffData>
     {

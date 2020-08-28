@@ -47,6 +47,8 @@
     <Compile Include="Buff\BuffType.cs" />
     <Compile Include="Effect\EffectManager.cs" />
     <Compile Include="GameData\BuffData.cs" />
+    <Compile Include="GameData\EffectData.cs" />
+    <Compile Include="GameData\SpellData.cs" />
     <Compile Include="Projectile\Projectile.cs" />
     <Compile Include="Projectile\ProjectileOld.cs" />
     <Compile Include="Projectile\ProjectileLinear.cs" />

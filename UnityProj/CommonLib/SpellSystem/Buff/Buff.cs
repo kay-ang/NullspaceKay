@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GameData;
+using System;
 
 namespace Nullspace
 {
