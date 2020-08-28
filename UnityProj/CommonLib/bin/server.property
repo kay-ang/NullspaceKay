@@ -1,0 +1,6 @@
+ip = 127.0.0.1
+port = 9898
+reconnect_count = 5
+reconnect_max_count = 5
+heart_interval = 3000
+reconnect_timer_interval = 2000

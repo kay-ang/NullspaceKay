@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2899ABA2-A547-4091-AAE0-BA5617642328}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ResourceCache</RootNamespace>
+    <AssemblyName>ResourceCache</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceCache\GameData\ResourceCacheConfig.cs" />
+    <Compile Include="ResourceCache\IResourceConfig.cs" />
+    <Compile Include="ResourceCache\ResourceCacheBehaviour.cs" />
+    <Compile Include="ResourceCache\ResourceCacheBindParent.cs" />
+    <Compile Include="ResourceCache\ResourceCacheEntity.cs" />
+    <Compile Include="ResourceCache\ResourceCacheMask.cs" />
+    <Compile Include="ResourceCache\ResourceCachePool.cs" />
+    <Compile Include="ResourceCache\ResourceCachePools.cs" />
+    <Compile Include="ResourceCache\Strategy\StrategyBase.cs" />
+    <Compile Include="ResourceCache\Strategy\StrategyFactory.cs" />
+    <Compile Include="ResourceCache\Strategy\StrategyFixedForce.cs" />
+    <Compile Include="ResourceCache\Strategy\StrategyFixedIgnore.cs" />
+    <Compile Include="ResourceCache\Strategy\StrategyInfinteCached.cs" />
+    <Compile Include="ResourceCache\Strategy\StrategyType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonUtils\CommonUtils.csproj">
+      <Project>{e6dcb454-70bc-4b6e-9bd4-22ee1b21eac9}</Project>
+      <Name>CommonUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GameDataRuntime\GameDataRuntime.csproj">
+      <Project>{05b46955-d701-466d-ba2c-6dca2fa88ed1}</Project>
+      <Name>GameDataRuntime</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,6 @@
+xlsx_dir = ./Excel // 指定输入Excel目录
+xml_dir = ../../../Assets/XmlGameData  // 指定导出xml数据的目录
+cs_dir = ../../GameDataDefine/XmlGameData // 指定导出csharp代码的目录
+recursive = true // 是否递归导出 excel
+ForceImmediate = false //全部即时加载并初始化
+md5_hash = false // 是否保存文件hash

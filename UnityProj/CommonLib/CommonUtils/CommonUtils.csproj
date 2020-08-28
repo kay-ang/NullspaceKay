@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E6DCB454-70BC-4B6E-9BD4-22EE1B21EAC9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CommonUtils</RootNamespace>
+    <AssemblyName>CommonUtils</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\CallbackWrapper\Callback.cs" />
+    <Compile Include="Common\CallbackWrapper\Callback0.cs" />
+    <Compile Include="Common\CallbackWrapper\Callback1.cs" />
+    <Compile Include="Common\CallbackWrapper\Callback2.cs" />
+    <Compile Include="Common\CallbackWrapper\Callback3.cs" />
+    <Compile Include="Common\CallbackWrapper\Callback4.cs" />
+    <Compile Include="Common\DataStruct\DoubleCircleLinkedList.cs" />
+    <Compile Include="Common\DataStruct\PriorityQueue.cs" />
+    <Compile Include="Common\EventDispatcher\EnumEventDispatcher.cs" />
+    <Compile Include="Common\EventDispatcher\EnumEventType.cs" />
+    <Compile Include="Common\EventDispatcher\EventDispatcher.cs" />
+    <Compile Include="Common\EventDispatcher\EventException.cs" />
+    <Compile Include="Common\EventDispatcher\IEventManager.cs" />
+    <Compile Include="Common\EventDispatcher\IntEventDefines.cs" />
+    <Compile Include="Common\EventDispatcher\IntEventDispatcher.cs" />
+    <Compile Include="Common\EventDispatcher\StringEventDefines.cs" />
+    <Compile Include="Common\EventDispatcher\StringEventDispatcher.cs" />
+    <Compile Include="Common\ObjectPool\ObjectBase.cs" />
+    <Compile Include="Common\ObjectPool\ObjectPool.cs" />
+    <Compile Include="Common\ObjectPool\ObjectPools.cs" />
+    <Compile Include="Common\Singleton.cs" />
+    <Compile Include="Common\ThreeState.cs" />
+    <Compile Include="Common\Timer\FrameTimerTaskHeap.cs" />
+    <Compile Include="Common\Timer\TimerTask.cs" />
+    <Compile Include="Common\Timer\TimerTaskQueue.cs" />
+    <Compile Include="Common\XML\MiniParser.cs" />
+    <Compile Include="Common\XML\SecurityParser.cs" />
+    <Compile Include="Common\XML\SmallXmlParser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Stream\INullStream.cs" />
+    <Compile Include="Stream\NullMemoryStream.cs" />
+    <Compile Include="Utils\DataUtils.cs" />
+    <Compile Include="Utils\DateTimeUtils.cs" />
+    <Compile Include="Utils\DebugUtils.cs" />
+    <Compile Include="Utils\EnumUtils.cs" />
+    <Compile Include="Utils\MathUtils.cs" />
+    <Compile Include="Utils\MD5HashUtils.cs" />
+    <Compile Include="Utils\ProfilerUtils.cs" />
+    <Compile Include="Utils\StringUtils.cs" />
+    <Compile Include="Utils\Vector3Ext.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

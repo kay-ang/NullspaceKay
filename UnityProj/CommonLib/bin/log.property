@@ -1,0 +1,5 @@
+Directory = ./Logs
+FileName = Nullspace
+FileExtention = log
+FlushInterval = 500 // millsecond 
+LogLevel = DEBUG | INFO | WARNING | ERROR // NONE EXCEPT CRITICAL

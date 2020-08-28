@@ -1,0 +1,3 @@
+ForceImmediate = false //全部即时加载并初始化
+log_config_file = log.property // 日志配置文件
+server_config_file = server.property // 服务端配置数据
