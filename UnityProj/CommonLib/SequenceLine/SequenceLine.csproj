@@ -69,17 +69,12 @@
     <Compile Include="Nav\NavPath\PathTrigger\PathTriggerEvent.cs" />
     <Compile Include="Nav\NavPath\PathTrigger\PathTriggerIndex.cs" />
     <Compile Include="Nav\NavPath\PathTrigger\PathTriggerStart.cs" />
-    <Compile Include="Nav\NavTarget\NavObjectConstraint.cs" />
-    <Compile Include="Nav\NavTarget\NavTargetCondition.cs" />
-    <Compile Include="Nav\NavTarget\NavTargetController.cs" />
-    <Compile Include="Nav\NavTarget\NavTargetType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sequence\BehaviourCollection.cs" />
     <Compile Include="Sequence\Behaviour\BehaviourCallback.cs" />
     <Compile Include="Sequence\Behaviour\BehaviourCallbackUtils.cs" />
     <Compile Include="Sequence\Behaviour\FrameCountCallback.cs" />
     <Compile Include="Sequence\Behaviour\TimeCallback.cs" />
-    <Compile Include="Sequence\CollectionUpdateLock.cs" />
     <Compile Include="Sequence\ISequnceUpdate.cs" />
     <Compile Include="Sequence\SequenceController.cs" />
     <Compile Include="Sequence\SequenceManager.cs" />

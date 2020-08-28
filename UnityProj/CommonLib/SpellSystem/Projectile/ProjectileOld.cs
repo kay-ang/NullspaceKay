@@ -3,7 +3,9 @@ using UnityEngine;
 
 namespace Nullspace
 {
-    public partial class NavTargetController
+
+
+    public partial class ProjectileOld
     {
         /// <summary>
         /// 到达边界处理
@@ -62,18 +64,8 @@ namespace Nullspace
     /// 目标对象处理。
     /// 这里冗余在一起，方便后面不重复 new 。而 会缓存
     /// </summary>
-    public partial class NavTargetController
+    public partial class ProjectileOld
     {
-
-        /// <summary>
-        /// 设置 默认朝向交点 为 对象目标
-        /// </summary>
-        public void SetTarget()
-        {
-            TargetType = NavTargetType.NONE;
-            IsCheckReached = false;
-        }
-
         /// <summary>
         /// 设置固定位置的目标点
         /// </summary>
@@ -85,16 +77,16 @@ namespace Nullspace
             targetPos.y = 0;
             TargetPos = targetPos;
             IsCheckReached = true;
-            TargetType = NavTargetType.POINT;
+            TargetType = ProjectileType.Linear;
         }
 
         /// <summary>
         /// 设置移动物体为对象目标
         /// </summary>
-        public void SetTarget(NavTargetController follow)
+        public void SetTarget(ProjectileOld follow)
         {
             TargetFollow = follow;
-            TargetType = NavTargetType.MOVABLE;
+            TargetType = ProjectileType.Track;
             IsCheckReached = true;
         }
 
@@ -106,9 +98,9 @@ namespace Nullspace
         {
             switch (TargetType)
             {
-                case NavTargetType.POINT:
+                case ProjectileType.Linear:
                     return TargetPos;
-                case NavTargetType.MOVABLE:
+                case ProjectileType.Track:
                     Vector3 p = TargetFollow != null ? TargetFollow.transform.position : Vector3.zero;
                     p.y = 0;
                     return p;
@@ -124,9 +116,9 @@ namespace Nullspace
         {
             switch (TargetType)
             {
-                case NavTargetType.POINT:
+                case ProjectileType.Linear:
                     return NormalBound.Contains(TargetPos);
-                case NavTargetType.MOVABLE:
+                case ProjectileType.Track:
                     if (TargetFollow != null && TargetFollow.gameObject.activeSelf)
                     {
                         Vector3 pos = TargetFollow.transform.position;
@@ -140,7 +132,7 @@ namespace Nullspace
 
     }
 
-    public partial class NavTargetController : MonoBehaviour
+    public partial class ProjectileOld : MonoBehaviour
     {
         public static float Height = 0;
         /// <summary>
@@ -192,12 +184,12 @@ namespace Nullspace
         /// 朝目标移动
         /// </summary>
         private Vector3 TargetPos;  // 目标为点
-        private NavTargetController TargetFollow;// 目标为移动物体
+        private ProjectileOld TargetFollow;// 目标为移动物体
 
         /// <summary>
         /// 目标类别
         /// </summary>
-        private NavTargetType TargetType;
+        private ProjectileType TargetType;
 
         /// <summary>
         /// 是否激活状态
@@ -227,19 +219,6 @@ namespace Nullspace
             BigBound.max = max + new Vector3(1, 0, 1);
             NormalBound.min = min;
             NormalBound.max = max;
-
-#if UNITY_EDITOR
-            Vector3 mmin = min;
-            Vector3 mmax = max;
-            mmin.y = 0;
-            mmax.y = 0;
-            Vector3 mmin1 = new Vector3(mmax.x, 0, mmin.z);
-            Vector3 mmax1 = new Vector3(mmin.x, 0, mmax.z);
-            Debug.DrawLine(mmin, mmin1, Color.black, 1000000);
-            Debug.DrawLine(mmin1, mmax, Color.black, 1000000);
-            Debug.DrawLine(mmax, mmax1, Color.black, 1000000);
-            Debug.DrawLine(mmax1, mmin, Color.black, 1000000);
-#endif
         }
 
         /// <summary>
@@ -321,12 +300,6 @@ namespace Nullspace
             {
                 Pos = NormalBound.ClosestPoint(Pos);
             }
-
-            if (TargetType == NavTargetType.NONE)
-            {
-                SetTarget();
-            }
-
             // 保证 朝向为 朝着目标
             if (IsCheckReached)
             {
@@ -483,7 +456,7 @@ namespace Nullspace
         }
     }
 
-    public partial class NavTargetController
+    public partial class ProjectileOld
     {
         /// <summary>
         /// 缓存 射线实例，避免太多 new

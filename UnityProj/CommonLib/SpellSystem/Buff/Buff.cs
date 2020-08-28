@@ -34,6 +34,56 @@ namespace Nullspace
         /// </summary>
         public event Action OnIntervalThink;
 
+        /// <summary>
+        /// Buff还可以通过请求改变运动来触发相关效果
+        /// </summary>
+        public event Action OnMotionUpdate;
+
+        /// <summary>
+        /// Buff还可以通过请求改变运动来触发相关效果
+        /// </summary>
+        public event Action OnMotionInterrupt;
+
+        /// <summary>
+        /// 监听某个主动技能执行成功。常用于被动技能Buff
+        /// </summary>
+        public event Action OnAbilityExecuted;
+
+        /// <summary>
+        /// 监听我方给目标造成伤害时触发
+        /// </summary>
+        public event Action OnBeforeGiveDamage;
+
+        /// <summary>
+        /// 监听我方给目标造成伤害时触发
+        /// </summary>
+        public event Action OnAfterGiveDamage;
+
+        /// <summary>
+        /// 监听我方受到伤害时触发
+        /// </summary>
+        public event Action OnBeforeTakeDamage;
+
+        /// <summary>
+        /// 监听我方受到伤害时触发
+        /// </summary>
+        public event Action OnAfterTakeDamage;
+
+        /// <summary>
+        /// 监听我方死亡时触发
+        /// </summary>
+        public event Action OnBeforeDead;
+
+        /// <summary>
+        /// 监听我方死亡时触发
+        /// </summary>
+        public event Action OnAfterDead;
+
+        /// <summary>
+        /// 监听我方击杀目标时触发
+        /// </summary>
+        public event Action OnKill;
+
         // buff 配置数据
         public BuffData mBuffData;
         // buff 执行的序列行为

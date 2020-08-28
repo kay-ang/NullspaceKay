@@ -48,6 +48,7 @@
     <Compile Include="Common\CallbackWrapper\Callback2.cs" />
     <Compile Include="Common\CallbackWrapper\Callback3.cs" />
     <Compile Include="Common\CallbackWrapper\Callback4.cs" />
+    <Compile Include="Common\CollectionUpdateLock.cs" />
     <Compile Include="Common\DataStruct\DoubleCircleLinkedList.cs" />
     <Compile Include="Common\DataStruct\PriorityQueue.cs" />
     <Compile Include="Common\EventDispatcher\EnumEventDispatcher.cs" />
@@ -82,6 +83,17 @@
     <Compile Include="Utils\ProfilerUtils.cs" />
     <Compile Include="Utils\StringUtils.cs" />
     <Compile Include="Utils\Vector3Ext.cs" />
+    <Compile Include="ValueChange\BoolAndValueStack.cs" />
+    <Compile Include="ValueChange\BoolOrValueStack.cs" />
+    <Compile Include="ValueChange\ColorValueStack.cs" />
+    <Compile Include="ValueChange\EventField.cs" />
+    <Compile Include="ValueChange\EventFieldClass.cs" />
+    <Compile Include="ValueChange\FloatValueStack.cs" />
+    <Compile Include="ValueChange\IntValueStack.cs" />
+    <Compile Include="ValueChange\PositionValueStack.cs" />
+    <Compile Include="ValueChange\QuaternionValueStack.cs" />
+    <Compile Include="ValueChange\ValueModifier.cs" />
+    <Compile Include="ValueChange\ValueStackGeneric.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
