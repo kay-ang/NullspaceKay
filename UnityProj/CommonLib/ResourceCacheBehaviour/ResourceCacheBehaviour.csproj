@@ -45,6 +45,14 @@
     <Compile Include="TestBehaviours.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CommonUtils\CommonUtils.csproj">
+      <Project>{e6dcb454-70bc-4b6e-9bd4-22ee1b21eac9}</Project>
+      <Name>CommonUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GameDataRuntime\GameDataRuntime.csproj">
+      <Project>{05b46955-d701-466d-ba2c-6dca2fa88ed1}</Project>
+      <Name>GameDataRuntime</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ResourceCache\ResourceCache.csproj">
       <Project>{2899aba2-a547-4091-aae0-ba5617642328}</Project>
       <Name>ResourceCache</Name>
