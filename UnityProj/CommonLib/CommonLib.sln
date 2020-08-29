@@ -39,6 +39,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserCustom", "UserCustom", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetManager", "AssetManager\AssetManager.csproj", "{C6A22BBA-2793-4C9A-AC25-86966B3E8C20}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityMile", "UnityMile\UnityMile.csproj", "{9BD805C4-CD8D-4065-8F44-E3CEE7B87921}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +99,10 @@ Global
 		{C6A22BBA-2793-4C9A-AC25-86966B3E8C20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6A22BBA-2793-4C9A-AC25-86966B3E8C20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6A22BBA-2793-4C9A-AC25-86966B3E8C20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BD805C4-CD8D-4065-8F44-E3CEE7B87921}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BD805C4-CD8D-4065-8F44-E3CEE7B87921}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BD805C4-CD8D-4065-8F44-E3CEE7B87921}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BD805C4-CD8D-4065-8F44-E3CEE7B87921}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

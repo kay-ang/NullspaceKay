@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9BD805C4-CD8D-4065-8F44-E3CEE7B87921}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UnityMile</RootNamespace>
+    <AssemblyName>UnityMile</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="UnityEngine.AssetBundleModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\bin\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Camera\CameraScreenCapture.cs" />
+    <Compile Include="Camera\CameraSequence.cs" />
+    <Compile Include="Camera\CameraShake.cs" />
+    <Compile Include="Physx\CollisionEvent.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\CooldownMask.cs" />
+    <Compile Include="UI\ScrollBehaviour.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AssetManager\AssetManager.csproj">
+      <Project>{c6a22bba-2793-4c9a-ac25-86966b3e8c20}</Project>
+      <Name>AssetManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClientNetwork\ClientNetwork.csproj">
+      <Project>{a384d29f-51f4-4968-ab04-44fd1803b4be}</Project>
+      <Name>ClientNetwork</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonUtils\CommonUtils.csproj">
+      <Project>{e6dcb454-70bc-4b6e-9bd4-22ee1b21eac9}</Project>
+      <Name>CommonUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExcelTools\GameDataChecker\GameDataChecker.csproj">
+      <Project>{cb51adfe-ee56-4ffe-b01d-2316865d0c8a}</Project>
+      <Name>GameDataChecker</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExcelTools\GameDataExport\GameDataExport.csproj">
+      <Project>{5f5c271c-970f-48e6-9498-d54615c07110}</Project>
+      <Name>GameDataExport</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GameDataDefine\GameDataDefine.csproj">
+      <Project>{ca6c8906-9d48-41cc-832a-29c3792b2aed}</Project>
+      <Name>GameDataDefine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GameDataRuntime\GameDataRuntime.csproj">
+      <Project>{05b46955-d701-466d-ba2c-6dca2fa88ed1}</Project>
+      <Name>GameDataRuntime</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logger\Logger.csproj">
+      <Project>{96b3be39-9308-4874-ac9b-8ff44d723311}</Project>
+      <Name>Logger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ResourceCacheBehaviour\ResourceCacheBehaviour.csproj">
+      <Project>{b76fe350-a13c-4fbf-b790-a0e251090024}</Project>
+      <Name>ResourceCacheBehaviour</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ResourceCache\ResourceCache.csproj">
+      <Project>{2899aba2-a547-4091-aae0-ba5617642328}</Project>
+      <Name>ResourceCache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SequenceLine\SequenceLine.csproj">
+      <Project>{daa1e3bc-7780-49b2-955e-6faade84aa6e}</Project>
+      <Name>SequenceLine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SpellSystem\SpellSystem.csproj">
+      <Project>{d9e9dca1-f716-4b3a-9470-114211fc93a8}</Project>
+      <Name>SpellSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StateController\StateController.csproj">
+      <Project>{9c708a14-be68-458a-9cc1-080415410d37}</Project>
+      <Name>StateController</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
