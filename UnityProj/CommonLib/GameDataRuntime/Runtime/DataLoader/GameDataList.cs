@@ -30,7 +30,7 @@ namespace Nullspace
             {
                 return Data != null ? Data.Count : 0;
             }
-            
+
         }
 
         protected static void SetData(List<T> allDatas)

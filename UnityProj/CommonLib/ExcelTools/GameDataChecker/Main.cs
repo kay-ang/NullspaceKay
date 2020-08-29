@@ -12,7 +12,7 @@ namespace Nullspace
             LogAction(InfoType.Warning, "EmptyGameData In Assembly " + t.Assembly.FullName);
             Config = Properties.Create("config.txt");
             bool forceImmediate = Config.GetBool("ForceImmediate", false);
-            GameDataManager.SetDir(Config.GetString("xml_dir", "."), false, forceImmediate);
+            GameDataManager.SetConfigInfo(Config.GetString("xml_dir", "."), false, forceImmediate);
             DebugUtils.SetLogAction(LogAction);
 
             LogAction(InfoType.Error, "Check Start ...");

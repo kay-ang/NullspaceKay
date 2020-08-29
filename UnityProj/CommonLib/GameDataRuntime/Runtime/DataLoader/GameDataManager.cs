@@ -40,22 +40,32 @@ namespace Nullspace
         
         public static void InitByFile<T>(string fileName, string tagName) where T : GameData<T>, new()
         {
-            if (!FileLoaded.ContainsKey(fileName))
+            if (!mFileLoaded.ContainsKey(fileName))
             {
                 int id = ProfilerUtils.StartProfiler();
                 SecurityElement root = LoadXml(fileName);
                 ProfilerUtils.StopProfiler(id, "InitByFile LoadXml Cost", true);
                 if (root != null)
                 {
-                    FileLoaded.Add(fileName, root);
+                    mFileLoaded.Add(fileName, root);
                 }
             }
-            if (!FileLoaded.ContainsKey(fileName))
+            if (!mFileLoaded.ContainsKey(fileName))
             {
                 DebugUtils.Assert(false, "Wrong XML Element: " + fileName);
                 return;
             }
-            SecurityElement p = SerchChildByName(FileLoaded[fileName], tagName, false);
+            SecurityElement p = SerchChildByName(mFileLoaded[fileName], tagName, false);
+            if (p != null)
+            {
+                Init<T>(p);
+            }
+        }
+
+        public static void InitByXmlContent<T>(string content, string tagName) where T : GameData<T>, new()
+        {
+            SecurityElement root = LoadXmlContent(content);
+            SecurityElement p = SerchChildByName(root, tagName, false);
             if (p != null)
             {
                 Init<T>(p);
@@ -77,7 +87,7 @@ namespace Nullspace
 
         public static void ClearXmlData()
         {
-            FileLoaded.Clear();
+            mFileLoaded.Clear();
         }
 
         /// <summary>
@@ -98,9 +108,9 @@ namespace Nullspace
         /// <param name="fileName">文件名</param>
         public static void ClearFileData(string fileName)
         {
-            if (FileLoaded.ContainsKey(fileName))
+            if (mFileLoaded.ContainsKey(fileName))
             {
-                FileLoaded.Remove(fileName);
+                mFileLoaded.Remove(fileName);
             }
             if (mGameDataTypes.ContainsKey(fileName))
             {
@@ -157,7 +167,12 @@ namespace Nullspace
             }
         }
 
-        public static void SetDir(string dir, bool isAssetbundle, bool forceImmediate)
+        public static void ChangeDir(string dir)
+        {
+            FileDir = dir;
+        }
+
+        public static void SetConfigInfo(string dir, bool isAssetbundle, bool forceImmediate)
         {
             FileDir = dir;
             IsAssetBundle = isAssetbundle;
@@ -168,10 +183,8 @@ namespace Nullspace
     // private
     public partial class GameDataManager
     {
-
-
         private static Dictionary<string, List<Type>> mGameDataTypes = new Dictionary<string, List<Type>>();
-        private static Dictionary<string, SecurityElement> FileLoaded = new Dictionary<string, SecurityElement>();
+        private static Dictionary<string, SecurityElement> mFileLoaded = new Dictionary<string, SecurityElement>();
 
         static GameDataManager()
         {
@@ -236,8 +249,6 @@ namespace Nullspace
         }
         private static SecurityElement LoadXmlFile(string filePath)
         {
-            filePath += XmlFileSuffix;
-
             if (System.IO.File.Exists(filePath))
             {
                 return LoadXmlContent(System.IO.File.ReadAllText(filePath));
@@ -287,7 +298,8 @@ namespace Nullspace
             }
             return null;
         }
-        private static void Init<T>(SecurityElement p) where T : GameData<T>, new()
+        
+        public static void Init<T>(SecurityElement p) where T : GameData<T>, new()
         {
             List<T> allDataList = new List<T>();
             Type type = typeof(T);

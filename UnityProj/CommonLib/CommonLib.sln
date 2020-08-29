@@ -35,6 +35,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameDataExport", "ExcelTool
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpellSystem", "SpellSystem\SpellSystem.csproj", "{D9E9DCA1-F716-4B3A-9470-114211FC93A8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserCustom", "UserCustom", "{CA9BBF30-7CB8-4D01-8306-F76CDB624B51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssetManager", "AssetManager\AssetManager.csproj", "{C6A22BBA-2793-4C9A-AC25-86966B3E8C20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -89,11 +93,17 @@ Global
 		{D9E9DCA1-F716-4B3A-9470-114211FC93A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9E9DCA1-F716-4B3A-9470-114211FC93A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9E9DCA1-F716-4B3A-9470-114211FC93A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6A22BBA-2793-4C9A-AC25-86966B3E8C20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6A22BBA-2793-4C9A-AC25-86966B3E8C20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6A22BBA-2793-4C9A-AC25-86966B3E8C20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6A22BBA-2793-4C9A-AC25-86966B3E8C20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{CA6C8906-9D48-41CC-832A-29C3792B2AED} = {CA9BBF30-7CB8-4D01-8306-F76CDB624B51}
+		{B76FE350-A13C-4FBF-B790-A0E251090024} = {CA9BBF30-7CB8-4D01-8306-F76CDB624B51}
 		{CB51ADFE-EE56-4FFE-B01D-2316865D0C8A} = {32A99547-3D12-42E3-BF90-7972027C0C80}
 		{5F5C271C-970F-48E6-9498-D54615C07110} = {32A99547-3D12-42E3-BF90-7972027C0C80}
 	EndGlobalSection

@@ -62,7 +62,7 @@ namespace Nullspace
                 return t;
             }
         }
-
+        
         object IEnumerator.Current
         {
             get

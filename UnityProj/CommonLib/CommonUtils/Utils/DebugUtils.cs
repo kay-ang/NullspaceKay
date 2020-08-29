@@ -7,7 +7,8 @@ namespace Nullspace
     {
         Info,
         Warning,
-        Error
+        Error,
+        Exception
     }
 
     public class DebugUtils
