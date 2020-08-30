@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<cross-domain-policy>
+<allow-access-from domain="*"/>
+</cross-domain-policy>

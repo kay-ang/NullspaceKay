@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="Benchmark" default="build" basedir="..">
+	<!-- 源文件目录指定（.java文件） -->
+	<property name="srcDir" location="${basedir}/src" />
+	<!-- 目标文件目录指定（.class文件） -->
+	<property name="binDir" location="${basedir}/Class" />
+	<!-- jar文件名指定 -->
+	<property name="jarFile" value="${basedir}/../Server.jar" />
+
+	<!-- main函数指定以及所在工程指定 -->
+	<property name="package" value="com.nullspace.main" />
+	<property name="mainclass" value="MJMain" />
+
+	<!-- 依赖文件目录指定 -->
+	<property name="lib-out" value="${basedir}/../libs" />
+	
+	<path id="lib-out">
+		<fileset dir="${lib-out}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+	
+	
+	<target name="Delete">
+		<delete dir="${binDir}" />
+	</target>
+	
+	<!-- 目标任务执行 -->
+	<target name="Init" depends="Delete">
+		<mkdir dir="${binDir}" />
+	</target>
+	
+	<!-- 依赖所有target-->
+	<target name="Server" depends="Init">
+		<javac encoding="utf-8" includeAntRuntime="false" srcdir="${srcDir}" destdir="${binDir}">
+			<classpath refid="lib-out" />
+		</javac>
+		<manifestclasspath property="manifestPath" jarfile="${jarFile}">
+			<classpath refid="lib-out" />
+		</manifestclasspath>	
+		<jar encoding="utf-8" destfile="${jarFile}" basedir="${binDir}" >
+			<manifest>
+				<attribute name="Class-Path" value="${manifestPath}" /> 
+				<attribute name="Main-Class" value="${package}.${mainclass}" /> 
+			</manifest>
+		</jar>
+	</target>
+
+	<target name="build" depends="Server">
+		<delete dir="${binDir}" />
+	</target>
+	
+</project>

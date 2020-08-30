@@ -1,0 +1,689 @@
+2017-12-11 09:23:59, 686[main][com.kl.command.MJCommandManager:(?)]-command size: 2
+2017-12-11 09:23:59, 686[main][com.kl.socket.MJSocketServer:(?)]-server started ...
+ IP: 127.0.0.1 at PORT: 9898
+2017-12-11 14:29:31, 648[main][com.kl.command.MJCommandManager:(?)]-command size: 2
+2017-12-11 14:29:31, 653[main][com.kl.socket.MJSocketServer:(?)]-server started ...
+ IP: 172.10.3.254 at PORT: 9898
+2017-12-11 14:32:43, 312[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:32:44, 315[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:33:00, 506[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:33:00, 507[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:33:01, 507[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:33:01, 508[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:33:04, 185[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:33:04, 185[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:33:04, 186[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:33:04, 186[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:33:04, 187[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:33:04, 187[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:33:04, 188[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:33:04, 189[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:33:05, 078[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:33:06, 078[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:33:12, 858[main][com.kl.command.MJCommandManager:(?)]-command size: 2
+2017-12-11 14:33:12, 864[main][com.kl.socket.MJSocketServer:(?)]-server started ...
+ IP: 172.10.3.254 at PORT: 9898
+2017-12-11 14:33:41, 212[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:33:42, 213[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:33:53, 152[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:33:53, 152[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:33:54, 152[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:33:54, 153[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:33:55, 823[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:33:55, 825[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:34:00, 845[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:34:01, 845[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:34:07, 411[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:34:07, 413[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:34:16, 575[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:34:16, 576[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:34:17, 576[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:34:17, 577[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:34:24, 318[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:34:25, 319[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:34:54, 277[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:34:54, 278[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:34:54, 279[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:34:54, 279[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:34:54, 280[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:34:54, 280[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:34:54, 282[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:34:54, 284[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:34:54, 285[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:34:55, 286[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:34:55, 287[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:34:55, 289[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:35:20, 609[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:35:20, 610[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:35:20, 610[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:35:20, 611[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:35:20, 611[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:35:20, 839[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:35:20, 839[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:35:20, 840[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:35:20, 840[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:35:20, 841[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:35:20, 841[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:35:20, 841[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:35:25, 863[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:35:26, 863[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:43:44, 952[main][com.kl.command.MJCommandManager:(?)]-command size: 2
+2017-12-11 14:43:44, 962[main][com.kl.socket.MJSocketServer:(?)]-server started ...
+ IP: 172.10.3.254 at PORT: 9898
+2017-12-11 14:50:47, 499[main][com.kl.command.MJCommandManager:(?)]-command size: 2
+2017-12-11 14:50:47, 504[main][com.kl.socket.MJSocketServer:(?)]-server started ...
+ IP: 172.10.3.254 at PORT: 9898
+2017-12-11 14:51:18, 088[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:51:18, 089[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:51:19, 091[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:51:19, 092[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:51:20, 275[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:51:20, 275[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:51:28, 604[main][com.kl.command.MJCommandManager:(?)]-command size: 2
+2017-12-11 14:51:28, 609[main][com.kl.socket.MJSocketServer:(?)]-server started ...
+ IP: 172.10.3.254 at PORT: 9898
+2017-12-11 14:51:35, 333[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:51:36, 334[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:51:40, 276[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:51:40, 276[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:51:48, 688[main][com.kl.command.MJCommandManager:(?)]-command size: 2
+2017-12-11 14:51:48, 693[main][com.kl.socket.MJSocketServer:(?)]-server started ...
+ IP: 172.10.3.254 at PORT: 9898
+2017-12-11 14:51:55, 278[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:51:55, 782[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:52:11, 783[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-not exists type: 0
+2017-12-11 14:52:16, 786[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:52:16, 787[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:52:21, 811[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:52:22, 813[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:52:26, 731[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:52:26, 731[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:52:39, 722[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:52:39, 749[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:52:39, 752[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:52:39, 753[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:52:41, 779[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:52:41, 780[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:52:46, 819[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:52:47, 819[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:52:52, 883[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:52:53, 883[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:53:10, 058[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:53:10, 059[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:53:10, 059[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:53:10, 061[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:53:10, 063[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:53:10, 063[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:53:12, 674[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:53:12, 675[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:53:16, 803[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:53:17, 803[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:53:21, 759[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:53:21, 759[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:53:26, 818[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:53:27, 819[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:53:37, 439[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:53:37, 440[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:53:37, 440[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:53:37, 442[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:53:41, 830[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:53:41, 830[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:53:46, 762[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:53:46, 762[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:53:51, 763[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:53:51, 763[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:53:57, 784[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:53:58, 785[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:54:10, 771[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:54:10, 772[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:54:11, 759[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:54:11, 759[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:54:11, 760[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:54:11, 760[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:54:16, 813[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:54:16, 814[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:55:36, 824[main][com.kl.command.MJCommandManager:(?)]-command size: 2
+2017-12-11 14:55:36, 828[main][com.kl.socket.MJSocketServer:(?)]-server started ...
+ IP: 172.10.3.254 at PORT: 9898
+2017-12-11 14:55:37, 564[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:55:37, 564[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:55:37, 565[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:55:37, 565[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:55:37, 565[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:55:37, 567[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:55:37, 570[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:55:37, 571[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:55:37, 572[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:55:37, 572[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:55:41, 835[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 14:55:41, 836[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 14:57:10, 010[main][com.kl.command.MJCommandManager:(?)]-command size: 2
+2017-12-11 14:57:10, 010[main][com.kl.socket.MJSocketServer:(?)]-server started ...
+ IP: 172.10.3.254 at PORT: 9898
+2017-12-11 14:57:51, 675[main][com.kl.command.MJCommandManager:(?)]-command size: 2
+2017-12-11 14:57:51, 680[main][com.kl.socket.MJSocketServer:(?)]-server started ...
+ IP: 172.10.3.254 at PORT: 9898
+2017-12-11 14:58:04, 769[main][com.kl.command.MJCommandManager:(?)]-command size: 2
+2017-12-11 14:58:04, 774[main][com.kl.socket.MJSocketServer:(?)]-server started ...
+ IP: 172.10.3.254 at PORT: 9898
+2017-12-11 15:33:51, 501[main][com.kl.command.MJCommandManager:(?)]-command size: 2
+2017-12-11 15:33:51, 506[main][com.kl.socket.MJSocketServer:(?)]-server started ...
+ IP: 172.10.3.254 at PORT: 9898
+2017-12-11 15:33:55, 279[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 280[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 280[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 281[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 281[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 281[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 282[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 282[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 282[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 283[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 283[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 283[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 283[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 283[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 284[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 285[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 285[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 285[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 285[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 285[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 286[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 286[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 287[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 287[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 287[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 287[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 288[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 288[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 288[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 288[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 289[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 289[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 289[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 289[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 289[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 290[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 290[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 290[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 290[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 290[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 291[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 291[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 292[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 293[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 293[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 294[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 295[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 295[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 295[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 296[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 296[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 296[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 297[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 297[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 297[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 297[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 297[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 298[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 298[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 298[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 298[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 298[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 299[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 299[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 299[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 300[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 300[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 300[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 300[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 301[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 301[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 303[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 303[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 304[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 304[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 304[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 304[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 304[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 305[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 305[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 305[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 305[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 305[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 306[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 306[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 306[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 307[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 307[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 307[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 307[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 308[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 308[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 308[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 309[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 309[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 310[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 310[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 311[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 311[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 312[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 312[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 312[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 312[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 313[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 313[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 313[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 314[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 314[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 314[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 314[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 315[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 315[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 315[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 315[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 315[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 316[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 316[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 316[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 316[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 316[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 317[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 317[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 317[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 317[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 317[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 318[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 318[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 318[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 318[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 318[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:33:55, 320[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 322[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 322[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 323[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 323[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 323[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 324[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 324[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 326[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 327[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 328[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 329[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 329[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 330[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 330[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 331[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 331[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 332[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 332[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 333[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 333[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 334[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 334[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 334[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 335[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 335[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 335[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 335[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 336[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 336[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 336[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 336[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 336[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 337[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 337[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 337[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 338[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 338[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 338[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 339[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 339[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 339[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 340[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 340[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 341[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 343[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 344[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 345[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 345[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 346[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 347[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 347[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 347[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 348[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 348[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 348[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 348[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 349[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 350[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 351[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 351[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 351[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 351[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 351[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 352[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 352[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 352[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 352[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 352[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 353[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 353[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 353[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 353[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 353[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 354[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 354[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 354[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 355[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 355[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 355[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 356[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 356[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 356[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 356[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 357[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 357[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 358[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 360[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 360[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 361[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 362[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 362[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 363[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 363[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 363[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 363[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 364[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 364[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 364[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 364[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 365[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 365[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 365[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 366[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 366[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 366[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 366[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 366[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 366[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 367[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 367[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 367[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 367[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 367[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 368[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 368[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 368[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 368[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 369[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 369[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 369[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 370[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 370[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 370[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 371[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 371[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 371[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 372[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 372[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:33:55, 372[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:35:59, 599[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-not exists type: 0
+2017-12-11 15:35:59, 599[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:35:59, 600[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:35:59, 600[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:36:00, 253[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:36:00, 254[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:36:00, 254[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:36:00, 254[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:36:00, 255[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:36:05, 196[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:36:05, 196[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:36:10, 173[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:36:11, 173[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:36:15, 178[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:36:15, 178[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:36:44, 279[main][com.kl.command.MJCommandManager:(?)]-command size: 2
+2017-12-11 15:36:44, 285[main][com.kl.socket.MJSocketServer:(?)]-server started ...
+ IP: 172.10.3.254 at PORT: 9898
+2017-12-11 15:36:53, 690[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:36:54, 692[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:36:56, 186[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:36:57, 186[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:37:01, 201[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:37:01, 202[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:37:06, 162[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:37:06, 165[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:37:11, 170[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:37:11, 171[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:37:16, 153[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:37:16, 154[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:37:21, 094[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:37:21, 095[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:37:26, 096[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:37:27, 097[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:37:31, 100[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:37:31, 100[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:37:31, 580[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:37:31, 581[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:37:32, 756[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 6000
+2017-12-11 15:37:33, 684[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 6000
+2017-12-11 15:37:34, 049[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 6000
+2017-12-11 15:37:34, 446[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 6000
+2017-12-11 15:37:34, 794[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 6000
+2017-12-11 15:37:36, 103[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 6000
+2017-12-11 15:37:41, 106[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:37:42, 106[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:37:45, 364[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:37:45, 365[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:37:46, 093[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 6000
+2017-12-11 15:37:46, 457[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:37:46, 458[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:37:47, 998[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 6000
+2017-12-11 15:37:48, 859[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 6000
+2017-12-11 15:37:49, 671[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 6000
+2017-12-11 15:37:50, 019[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 6000
+2017-12-11 15:37:50, 433[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 6000
+2017-12-11 15:37:50, 781[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 6000
+2017-12-11 15:37:51, 096[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 6000
+2017-12-11 15:37:51, 213[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:37:51, 213[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:37:51, 908[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 6000
+2017-12-11 15:37:54, 609[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 6000
+2017-12-11 15:37:55, 205[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 6000
+2017-12-11 15:37:55, 718[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 6000
+2017-12-11 15:37:56, 099[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 6000
+2017-12-11 15:37:56, 447[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:37:56, 448[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:37:56, 845[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 6000
+2017-12-11 15:37:57, 309[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 6000
+2017-12-11 15:37:57, 657[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 6000
+2017-12-11 15:37:59, 926[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 6000
+2017-12-11 15:38:00, 523[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 6000
+2017-12-11 15:38:01, 102[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 6000
+2017-12-11 15:38:01, 119[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:38:01, 120[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:38:19, 416[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-not exists type: 0
+2017-12-11 15:38:21, 977[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:38:21, 977[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:38:27, 510[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:38:27, 510[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:38:31, 951[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:38:32, 951[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:48:53, 521[nioEventLoopGroup-3-3][com.kl.command.MJCommandManager:(?)]-not exists type: 0
+2017-12-11 15:49:07, 204[nioEventLoopGroup-3-3][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:49:07, 204[nioEventLoopGroup-3-3][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:49:07, 206[nioEventLoopGroup-3-3][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:49:07, 206[nioEventLoopGroup-3-3][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:49:08, 497[nioEventLoopGroup-3-3][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:49:08, 498[nioEventLoopGroup-3-3][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:49:18, 244[nioEventLoopGroup-3-3][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:49:18, 245[nioEventLoopGroup-3-3][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:49:18, 492[nioEventLoopGroup-3-3][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:49:19, 492[nioEventLoopGroup-3-3][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:49:35, 543[nioEventLoopGroup-3-4][com.kl.command.MJCommandManager:(?)]-not exists type: 0
+2017-12-11 15:50:10, 992[nioEventLoopGroup-3-5][com.kl.command.MJCommandManager:(?)]-not exists type: 0
+2017-12-11 15:50:10, 993[nioEventLoopGroup-3-5][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:50:10, 993[nioEventLoopGroup-3-5][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:50:10, 994[nioEventLoopGroup-3-5][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:50:10, 995[nioEventLoopGroup-3-5][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:50:12, 184[nioEventLoopGroup-3-5][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:50:12, 185[nioEventLoopGroup-3-5][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:53:30, 151[nioEventLoopGroup-3-6][com.kl.command.MJCommandManager:(?)]-not exists type: 0
+2017-12-11 15:53:35, 110[nioEventLoopGroup-3-6][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:53:35, 111[nioEventLoopGroup-3-6][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:55:20, 415[nioEventLoopGroup-3-7][com.kl.command.MJCommandManager:(?)]-not exists type: 0
+2017-12-11 15:55:25, 391[nioEventLoopGroup-3-7][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:55:26, 391[nioEventLoopGroup-3-7][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 15:56:34, 442[nioEventLoopGroup-3-8][com.kl.command.MJCommandManager:(?)]-not exists type: 0
+2017-12-11 15:56:39, 417[nioEventLoopGroup-3-8][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 15:56:39, 418[nioEventLoopGroup-3-8][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 17:07:39, 537[main][com.kl.command.MJCommandManager:(?)]-command size: 2
+2017-12-11 17:07:39, 583[main][com.kl.socket.MJSocketServer:(?)]-server started ...
+ IP: 172.10.3.254 at PORT: 9898
+2017-12-11 17:11:29, 372[main][com.kl.command.MJCommandManager:(?)]-command size: 2
+2017-12-11 17:11:29, 376[main][com.kl.socket.MJSocketServer:(?)]-server started ...
+ IP: 172.10.3.254 at PORT: 9898
+2017-12-11 17:14:39, 166[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 17:14:40, 168[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 17:14:50, 396[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-not exists type: 0
+2017-12-11 17:15:07, 217[main][com.kl.command.MJCommandManager:(?)]-command size: 2
+2017-12-11 17:15:07, 222[main][com.kl.socket.MJSocketServer:(?)]-server started ...
+ IP: 172.10.3.254 at PORT: 9898
+2017-12-11 17:49:58, 311[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-not exists type: 0
+2017-12-11 17:50:04, 630[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 17:50:05, 631[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 17:51:30, 476[main][com.kl.command.MJCommandManager:(?)]-command size: 2
+2017-12-11 17:51:30, 482[main][com.kl.socket.MJSocketServer:(?)]-server started ...
+ IP: 172.10.3.254 at PORT: 9898
+2017-12-11 17:52:22, 473[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 17:52:23, 474[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 17:52:27, 481[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 17:52:27, 481[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 17:53:35, 603[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-not exists type: 0
+2017-12-11 17:53:40, 579[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 17:53:40, 581[nioEventLoopGroup-3-2][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 17:55:52, 899[nioEventLoopGroup-3-3][com.kl.command.MJCommandManager:(?)]-not exists type: 0
+2017-12-11 18:03:18, 001[nioEventLoopGroup-3-4][com.kl.command.MJCommandManager:(?)]-not exists type: 0
+2017-12-11 18:03:21, 561[nioEventLoopGroup-3-4][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 18:03:21, 561[nioEventLoopGroup-3-4][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.253 发送信息 1
+2017-12-11 18:03:25, 811[nioEventLoopGroup-3-5][com.kl.command.MJCommandManager:(?)]-not exists type: 0
+2017-12-11 18:03:33, 011[nioEventLoopGroup-3-6][com.kl.command.MJCommandManager:(?)]-not exists type: 0
+2017-12-11 19:44:18, 663[nioEventLoopGroup-3-7][com.kl.command.MJCommandManager:(?)]-not exists type: 0
+2017-12-11 19:53:40, 941[nioEventLoopGroup-3-8][com.kl.command.MJCommandManager:(?)]-not exists type: 0
+2017-12-11 20:16:33, 087[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-not exists type: 0
+2017-12-11 20:16:33, 088[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 088[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 089[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 091[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 091[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 091[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 091[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 092[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 092[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 092[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 093[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 093[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 094[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 094[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 095[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 095[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 095[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 095[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 096[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 096[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 201[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 202[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 202[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 202[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 203[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 203[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 203[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 203[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 203[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 204[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 204[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 204[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 204[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 204[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 204[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 205[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 205[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 205[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 205[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 205[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 205[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 206[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 206[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 206[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 206[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 206[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 206[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 206[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:33, 207[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 207[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 208[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 208[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 209[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 209[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 210[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 210[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 211[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 211[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 212[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 212[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 213[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 213[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 214[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 217[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 218[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 220[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 221[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 221[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 222[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 222[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 222[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 222[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 223[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 223[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 223[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 223[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 223[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:33, 224[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:37, 171[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:37, 172[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:42, 168[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:43, 169[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:47, 168[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:47, 169[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:52, 168[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:53, 169[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:16:57, 168[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:16:57, 169[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:17:02, 168[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:17:02, 169[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:17:07, 168[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:17:07, 169[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:17:12, 169[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:17:12, 170[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:17:17, 168[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:17:18, 169[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:17:22, 167[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:17:22, 169[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:17:27, 167[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:17:28, 169[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:17:32, 169[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:17:33, 170[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:17:37, 185[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:17:38, 186[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:17:42, 185[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:17:43, 186[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:17:58, 480[nioEventLoopGroup-3-2][com.kl.command.MJCommandManager:(?)]-not exists type: 0
+2017-12-11 20:27:36, 929[nioEventLoopGroup-3-3][com.kl.command.MJCommandManager:(?)]-not exists type: 0
+2017-12-11 20:27:41, 702[nioEventLoopGroup-3-3][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:27:42, 703[nioEventLoopGroup-3-3][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:27:46, 702[nioEventLoopGroup-3-3][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-11 20:27:46, 703[nioEventLoopGroup-3-3][class com.kl.socket.MJSocketSession:(?)]-用户  172.10.3.254 发送信息 1
+2017-12-11 20:32:14, 133[nioEventLoopGroup-3-5][com.kl.command.MJCommandManager:(?)]-not exists type: 0
+2017-12-11 20:34:42, 998[nioEventLoopGroup-3-6][com.kl.command.MJCommandManager:(?)]-not exists type: 0

@@ -1,0 +1,6 @@
+syntax = "proto3";
+package google.protobuf;
+message csTest {
+  string type_url = 1;
+  bytes value = 2;
+}

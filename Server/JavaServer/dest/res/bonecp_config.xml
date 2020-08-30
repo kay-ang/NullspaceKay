@@ -1,0 +1,59 @@
+<bonecp-config>
+	<named-config name="default-config">
+		<property name="minConnectionsPerPartition">3</property>
+		<property name="maxConnectionsPerPartition">40</property>
+		<property name="acquireIncrement">2</property>
+		<property name="partitionCount">2</property>
+		<property name="idleConnectionTestPeriodInMinutes">240</property>		 		 
+		<property name="idleMaxAgeInMinutes">60</property>
+		<property name="idleMaxAgeInSeconds">3600</property>
+		<property name="statementsCacheSize">2</property>
+		<property name="closeConnectionWatch">false</property>
+		<property name="acquireRetryDelayInMs">7000</property>
+		<property name="lazyInit">false</property>
+		<property name="transactionRecoveryEnabled">false</property>
+		<property name="acquireRetryAttempts">5</property>
+		<property name="disableJMX">false</property>
+		<property name="queryExecuteTimeLimitInMs">30000</property>
+		<property name="poolAvailabilityThreshold">20</property>
+		<property name="disableConnectionTracking">false</property>
+		<property name="connectionTimeoutInMs">30000</property>
+		<property name="closeConnectionWatchTimeoutInMs">10</property>
+		<property name="maxConnectionAgeInSeconds">1</property>
+		<property name="statisticsEnabled">false</property>
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/mj_server?useSSL=true&amp;characterEncoding=UTF-8</property>
+		<property name="username">root</property>
+		<property name="password">123qwe!@#</property>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="externalAuth">false</property>
+	</named-config>
+	
+	<named-config name="app_program_lib">	
+		<property name="minConnectionsPerPartition">3</property>
+		<property name="maxConnectionsPerPartition">30</property>
+		<property name="acquireIncrement">2</property>
+		<property name="partitionCount">3</property>
+		<property name="idleConnectionTestPeriodInMinutes">240</property>		 		 
+		<property name="statementsCacheSize">2</property>
+		<property name="releaseHelperThreads">1</property>
+		<property name="closeConnectionWatch">false</property>
+		<property name="idleMaxAgeInSeconds">3600</property>
+		<property name="lazyInit">true</property>
+		<property name="acquireRetryDelayInMs">3000</property>
+		<property name="acquireRetryAttempts">200</property>
+		<property name="queryExecuteTimeLimitInMs">30000</property>
+		<property name="poolAvailabilityThreshold">20</property>
+		<property name="logStatementsEnabled">false</property>
+		<property name="statementCachingEnabled">false</property>
+		<property name="disableConnectionTracking">false</property>
+		<property name="connectionTimeoutInMs">30000</property>
+		<property name="closeConnectionWatchTimeoutInMs">10000</property>
+		<property name="statementReleaseHelperThreads">1</property>
+		<property name="maxConnectionAgeInSeconds">4</property>
+		<property name="externalAuth">false</property>
+		<property name="jdbcUrl">jdbc:mysql://localhost/mj_server?useSSL=true&amp;characterEncoding=UTF-8</property>
+		<property name="username">root</property>
+		<property name="password">123qwe~!@</property>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>		
+	</named-config>
+</bonecp-config>

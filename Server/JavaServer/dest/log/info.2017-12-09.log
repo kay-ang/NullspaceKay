@@ -1,0 +1,29 @@
+2017-12-09 17:25:15, 399[main][com.kl.command.MJCommandManager:(?)]-command size: 2
+2017-12-09 17:25:15, 495[main][com.kl.socket.MJSocketServer:(?)]-server started ...
+ IP: 127.0.0.1 at PORT: 9898
+2017-12-09 17:53:00, 016[main][com.kl.command.MJCommandManager:(?)]-command size: 2
+2017-12-09 17:53:00, 021[main][com.kl.socket.MJSocketServer:(?)]-server started ...
+ IP: 127.0.0.1 at PORT: 9898
+2017-12-09 17:56:20, 175[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-09 17:56:21, 179[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  127.0.0.1 发送信息 1
+2017-12-09 17:56:27, 988[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-09 17:56:27, 991[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  127.0.0.1 发送信息 1
+2017-12-09 17:56:33, 625[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-09 17:56:34, 625[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  127.0.0.1 发送信息 1
+2017-12-09 17:58:46, 727[main][com.kl.command.MJCommandManager:(?)]-command size: 2
+2017-12-09 17:58:46, 732[main][com.kl.socket.MJSocketServer:(?)]-server started ...
+ IP: 127.0.0.1 at PORT: 9898
+2017-12-09 17:59:08, 668[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-09 17:59:09, 670[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  127.0.0.1 发送信息 1
+2017-12-09 17:59:16, 677[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-09 17:59:16, 679[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  127.0.0.1 发送信息 1
+2017-12-09 18:00:54, 597[main][com.kl.command.MJCommandManager:(?)]-command size: 2
+2017-12-09 18:00:54, 602[main][com.kl.socket.MJSocketServer:(?)]-server started ...
+ IP: 127.0.0.1 at PORT: 9898
+2017-12-09 18:01:12, 666[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-09 18:01:13, 671[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  127.0.0.1 发送信息 1
+2017-12-09 18:02:17, 362[main][com.kl.command.MJCommandManager:(?)]-command size: 2
+2017-12-09 18:02:17, 368[main][com.kl.socket.MJSocketServer:(?)]-server started ...
+ IP: 127.0.0.1 at PORT: 9898
+2017-12-09 18:02:42, 487[nioEventLoopGroup-3-1][com.kl.command.MJCommandManager:(?)]-execute command type: 1
+2017-12-09 18:02:43, 489[nioEventLoopGroup-3-1][class com.kl.socket.MJSocketSession:(?)]-用户  127.0.0.1 发送信息 1

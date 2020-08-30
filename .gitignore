@@ -15,3 +15,7 @@
 /UnityProj/Temp
 /UnityProj/CommonLib/bin
 /UnityProj/CommonLib/ExcelTools/bin
+/UnityProj/CommonLib/Google.Protobuf/obj
+/UnityProj/CommonLib/ProtobufMessage/obj
+/UnityProj/CommonLib/UnityMile/obj
+/UnityProj/CommonLib/AssetManager/obj
