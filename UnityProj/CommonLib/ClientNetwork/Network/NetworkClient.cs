@@ -62,15 +62,35 @@ namespace Nullspace
             int len = 0;
             do
             {
-                int size = mClientSocket.Receive(ptr, len, total - len, SocketFlags.None);
-                if (size == -1)
+                try
                 {
-                    Reconnect(StateParameterValue.Connectted2Reconnectting);
-                    return false;
+                    int size = mClientSocket.Receive(ptr, len, total - len, SocketFlags.None);
+                    if (size == -1)
+                    {
+                        Reconnect(StateParameterValue.Connectted2Reconnectting);
+                        return false;
+                    }
+                    else if (size == 0) // 断开连接
+                    {
+                        return false;
+                    }
+                    else
+                    {
+                        len += size;
+                    }
                 }
-                else
+                catch (SocketException e)
                 {
-                    len += size;
+                    if (e.SocketErrorCode == SocketError.TimedOut)
+                    {
+                        // 超时
+                        DebugUtils.Log(InfoType.Warning, "Receive TimeOut");
+                    }
+                    throw e;
+                }
+                catch (Exception e)
+                {
+                    throw e;
                 }
             } while (len < total);
             return true;
@@ -113,19 +133,32 @@ namespace Nullspace
         private List<byte> mSendPack;
         private Thread mSendThread;
 
-        public void Send(byte[] bytes)
+        public static void Send(int cmdId, byte[] bytes)
         {
-            if (IsConnectted())
+            if (Instance != null && Instance.IsConnectted())
+            {
+                NetworkPacket sendPacket = ObjectPools.Instance.Acquire<NetworkPacket>();
+                sendPacket.ToHead(mBufferHead);
+                sendPacket.CommandID = cmdId;
+                sendPacket.BodyContent = bytes;
+                bytes = sendPacket.ToBytes();
+                ObjectPools.Instance.Release(sendPacket);
+                Send(bytes);
+            }
+        }
+
+        public static void Send(byte[] bytes)
+        {
+            if (Instance != null && Instance.IsConnectted())
             {
                 lock (mSendLock)
                 {
-                    if (IsConnectted())
+                    if (Instance.IsConnectted())
                     {
-                        mNeedSendMessages.Enqueue(bytes);
+                        Instance.mNeedSendMessages.Enqueue(bytes);
                     }
                 }
             }
-
         }
 
         protected void ClearSend()
@@ -277,27 +310,37 @@ namespace Nullspace
                 mClientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
                 mClientSocket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.KeepAlive, true);
                 mClientSocket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ReuseAddress, true);
-                mClientSocket.NoDelay = true;
-                IAsyncResult result = mClientSocket.BeginConnect(mAddress, mPort,
-                    (IAsyncResult res) =>
-                    {
-                        try
-                        {
-                            mClientSocket.EndConnect(res);
-                        }
-                        catch (Exception callExcep)
-                        {
-                            DebugUtils.Log(InfoType.Error, "EndConnect Exception: " + callExcep.Message);
-                        }
-                    }, mClientSocket);
+                mClientSocket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.NoDelay, true);
+                mClientSocket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.ReceiveTimeout, 6000);
+                mClientSocket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.SendTimeout, 3000);
+                IAsyncResult result = mClientSocket.BeginConnect(mAddress, mPort, EndConnectCallback, mClientSocket);
                 // 这里要改写成异步
-                result.AsyncWaitHandle.WaitOne(2000, true);
+                result.AsyncWaitHandle.WaitOne(3000, true);
             }
             catch (Exception e)
             {
                 DebugUtils.Log(InfoType.Error, "Connect Exception: " + e.Message);
             }
             return mClientSocket.Connected;
+        }
+
+        protected void EndConnectCallback(IAsyncResult ar)
+        {
+            var state = (NetworkClient)ar.AsyncState;
+            Socket client = state.mClientSocket;
+            try
+            {
+                client.EndConnect(ar);
+            }
+            catch (Exception callExcep)
+            {
+                DebugUtils.Log(InfoType.Error, "EndConnect Exception: " + callExcep.Message);
+            }
+            if (client.Connected)
+            {
+                return;
+            }
+            client.Close();
         }
 
         protected void Reconnect(int value)

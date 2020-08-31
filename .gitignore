@@ -19,3 +19,6 @@
 /UnityProj/CommonLib/ProtobufMessage/obj
 /UnityProj/CommonLib/UnityMile/obj
 /UnityProj/CommonLib/AssetManager/obj
+/UnityProj/CommonLib/bin/System.Buffers.dll
+/UnityProj/CommonLib/bin/System.Memory.dll
+/UnityProj/CommonLib/bin/System.Runtime.CompilerServices.Unsafe.dll
