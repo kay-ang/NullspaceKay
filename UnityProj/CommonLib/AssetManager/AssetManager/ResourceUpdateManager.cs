@@ -9,7 +9,7 @@ using System.Collections.Concurrent;
 
 namespace Nullspace
 {
-    public class AssetManager : Singleton<AssetManager>
+    public class ResourceUpdateManager : Singleton<ResourceUpdateManager>
     {
         public const string AppVersionInfoFile = "app_version_info";
         public const string AppVersionInfoTag = "app_version_infos";

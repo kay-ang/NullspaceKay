@@ -8,7 +8,7 @@ namespace GameData
     public class AppVersionUpdateData : GameDataList<AppVersionUpdateData>
     {
         // 不允许 通过 FileUrl 初始化
-        public static readonly string FileUrl = string.Format("{0}#{1}", AssetManager.AppVersionInfoFile, AssetManager.AppVersionInfoTag);
+        public static readonly string FileUrl = string.Format("{0}#{1}", ResourceUpdateManager.AppVersionInfoFile, ResourceUpdateManager.AppVersionInfoTag);
         public static readonly bool IsDelayInitialized = false;
         public static readonly List<string> KeyNameList = null;
 

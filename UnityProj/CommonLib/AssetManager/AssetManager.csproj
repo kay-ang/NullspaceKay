@@ -66,7 +66,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssetManager\AssetManager.cs" />
+    <Compile Include="AssetManager\ResourceItem.cs" />
+    <Compile Include="AssetManager\ResourceLoadManager.cs" />
+    <Compile Include="AssetManager\ResourceUpdateManager.cs" />
     <Compile Include="AssetManager\GameData\AppVersionUpdateData.cs" />
     <Compile Include="AssetManager\GameData\AssetbundleUpdateData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
