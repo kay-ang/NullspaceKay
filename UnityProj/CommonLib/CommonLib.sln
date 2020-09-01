@@ -47,6 +47,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProtobufMessage", "Protobuf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtobufMessage", "ProtobufMessage\ProtobufMessage.csproj", "{C173C1C5-60A1-4221-8889-85E373DBDFFB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm", "Algorithm\Algorithm.csproj", "{89565F34-F86B-423B-9A82-B535FC85E71E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{C173C1C5-60A1-4221-8889-85E373DBDFFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C173C1C5-60A1-4221-8889-85E373DBDFFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C173C1C5-60A1-4221-8889-85E373DBDFFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89565F34-F86B-423B-9A82-B535FC85E71E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89565F34-F86B-423B-9A82-B535FC85E71E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89565F34-F86B-423B-9A82-B535FC85E71E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89565F34-F86B-423B-9A82-B535FC85E71E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

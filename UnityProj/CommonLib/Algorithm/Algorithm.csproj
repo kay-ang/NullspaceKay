@@ -7,8 +7,8 @@
     <ProjectGuid>{89565F34-F86B-423B-9A82-B535FC85E71E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PathFinder</RootNamespace>
-    <AssemblyName>PathFinder</AssemblyName>
+    <RootNamespace>Algorithm</RootNamespace>
+    <AssemblyName>Algorithm</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,9 +41,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PathAStar.cs" />
-    <Compile Include="PathDijkstra.cs" />
+    <Compile Include="PolygonScanning.cs" />
+    <Compile Include="Convex\JarvisConvex.cs" />
+    <Compile Include="Convex\QuickHull.cs" />
+    <Compile Include="Geometry\PlaneUtils.cs" />
+    <Compile Include="Geometry\Plane.cs" />
+    <Compile Include="Geometry\Segment.cs" />
+    <Compile Include="Geometry\PointsArray.cs" />
+    <Compile Include="Geometry\Vector2i.cs" />
+    <Compile Include="KMeansPlus.cs" />
+    <Compile Include="MSTKruskal.cs" />
+    <Compile Include="Navpath\PathAStar.cs" />
+    <Compile Include="Navpath\PathDijkstra.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recommand\FPGrowth.cs" />
+    <Compile Include="UnionSet\UnionSet.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonUtils\CommonUtils.csproj">
+      <Project>{e6dcb454-70bc-4b6e-9bd4-22ee1b21eac9}</Project>
+      <Name>CommonUtils</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
