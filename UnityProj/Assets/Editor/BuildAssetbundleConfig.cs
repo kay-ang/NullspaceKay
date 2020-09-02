@@ -10,6 +10,6 @@ namespace GameData
         public static readonly List<string> KeyNameList = null;
 
         public string Path { get; private set; }
-        public bool IncludeSub { get; private set; }
+        public bool Altas { get; private set; }
     }
 }

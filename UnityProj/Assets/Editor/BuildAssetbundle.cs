@@ -1,12 +1,13 @@
 ﻿using Nullspace;
 using UnityEditor;
+using UnityEngine;
 
 /// <summary>
 /// 参数设置见 ProjectSettings.asset
 /// </summary>
 public class BuildAssetbundle
 {
-    private static string PropertiesPath = "";
+    private static string PropertiesPath = "build.property";
     private static Properties BuildConfig;
     private static Properties TargetConfig;
     private static BuildTargetGroup BuildTargetGroup;
@@ -14,6 +15,7 @@ public class BuildAssetbundle
     private static string BuildPath;
     private static string BuildName;
     private static BuildOptions BuildOptions;
+    private static BuildAssetBundleOptions BuildAssetBundleOptions;
     private class BuildTargetChoose
     {
         public const string PC = "PC";
@@ -38,6 +40,7 @@ public class BuildAssetbundle
     {
         BuildAssetbundleTarget(BuildTargetChoose.PC);
     }
+
     public static void BuildAssetbundleTarget(string targetName)
     {
         BuildConfig = Properties.Create(PropertiesPath);
@@ -62,12 +65,19 @@ public class BuildAssetbundle
             default:
                 break;
         }
+        SetAssetbundleOpt();
         SetScriptingBackend();
         SetBuildOptions();
         SetVersion();
         SetScriptingDefineSymbols();
         SetPathAndName();
         Build();
+    }
+
+    private static void SetAssetbundleOpt()
+    {
+        string assetbundleOpt = BuildConfig.GetString("BuildAssetBundleOptions", "UncompressedAssetBundle");
+        BuildAssetBundleOptions = EnumUtils.StringToEnum<BuildAssetBundleOptions>(assetbundleOpt);
     }
 
     private static string GetFilePath()
@@ -155,13 +165,9 @@ public class BuildAssetbundle
 
     private static void Build()
     {
-        SetAssetBundleVaribales();
-        BuildPipeline.BuildPlayer(EditorBuildSettingsScene.GetActiveSceneList(EditorBuildSettings.scenes), BuildPath, BuildTarget, BuildOptions);
-    }
-
-    private static void SetAssetBundleVaribales()
-    {
-
+        AssetbundleTree.SetAssetABNames();
+        BuildPipeline.BuildAssetBundles(BuildPath, BuildAssetBundleOptions, BuildTarget);
+        // BuildPipeline.BuildPlayer(EditorBuildSettingsScene.GetActiveSceneList(EditorBuildSettings.scenes), BuildPath, BuildTarget, BuildOptions);
     }
 
     private static void SetPCVariables()

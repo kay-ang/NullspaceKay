@@ -1,0 +1,45 @@
+applicationIdentifier = com.nullspace.test
+productName = nullspace
+companyName = nullspace
+profiler = true
+suffix = local
+md5 = false
+BuildAssetBundleOptions = UncompressedAssetBundle
+buildType = assetbundle // player
+Android
+{
+	targetArchitectures = ARMv7
+	// AndroidSdkRoot = 
+	// AndroidNDkRoot = 
+	keystoreName = nullspace
+	keystorePass = nullspace
+	keyaliasName = nullspace
+	keyaliasPass = nullspace
+	buildPath = Assets/StreamingAssets/Android
+	// defineSymbols = 
+	projectName = Nullspace
+	// bundleVersionCode =  // < 10, preffix: '0'
+	// androidBuildSubtarget = 
+	// androidBuildSystem = 
+}
+
+IPhone
+{
+	bundleID = com.nullspace.test
+	buildEnv = Release
+	useAnimatedAutorotation = true
+	allowedAutorotateToLandscapeLeft = true
+	allowedAutorotateToLandscapeRight = true
+	allowedAutorotateToPortrait = true
+	allowedAutorotateToPortraitUpsideDown = true
+	appleEnableAutomaticSigning = true
+	buildPath = Assets/StreamingAssets/IOS
+	// defineSymbols = 
+	projectName = Nullspace
+}
+
+PC
+{
+	buildPath = Assets/StreamingAssets/PC
+	projectName = Nullspace
+}

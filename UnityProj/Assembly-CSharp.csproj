@@ -247,50 +247,17 @@
     <Reference Include="UnityEditor">
       <HintPath>F:/Unity2019_4_8f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
-    <Reference Include="BuffManager">
-      <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/BuffManager.dll</HintPath>
-    </Reference>
-    <Reference Include="ClientNetwork">
-      <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/ClientNetwork.dll</HintPath>
-    </Reference>
-    <Reference Include="CommonUtils">
-      <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/CommonUtils.dll</HintPath>
-    </Reference>
-    <Reference Include="GameDataDefine">
-      <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/GameDataDefine.dll</HintPath>
-    </Reference>
-    <Reference Include="GameDataRuntime">
-      <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/GameDataRuntime.dll</HintPath>
-    </Reference>
     <Reference Include="Google.Protobuf">
       <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/Google.Protobuf.dll</HintPath>
-    </Reference>
-    <Reference Include="Logger">
-      <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/Logger.dll</HintPath>
-    </Reference>
-    <Reference Include="ResourceCache">
-      <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/ResourceCache.dll</HintPath>
-    </Reference>
-    <Reference Include="ResourceCacheBehaviour">
-      <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/ResourceCacheBehaviour.dll</HintPath>
-    </Reference>
-    <Reference Include="SequenceLine">
-      <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/SequenceLine.dll</HintPath>
-    </Reference>
-    <Reference Include="StateController">
-      <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/StateController.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe">
-      <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Memory">
-      <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/System.Memory.dll</HintPath>
     </Reference>
     <Reference Include="System.Buffers">
       <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/System.Buffers.dll</HintPath>
     </Reference>
-    <Reference Include="ProtobufMessage">
-      <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/ProtobufMessage.dll</HintPath>
+    <Reference Include="System.Memory">
+      <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>F:/Unity2019_4_8f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -692,7 +659,12 @@
       <HintPath>F:/Unity/NullspaceKay/UnityProj/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup></ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{7A923948-FB1B-6207-A781-9734FAF5E43D}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

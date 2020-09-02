@@ -263,50 +263,17 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="BuffManager">
-      <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/BuffManager.dll</HintPath>
-    </Reference>
-    <Reference Include="ClientNetwork">
-      <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/ClientNetwork.dll</HintPath>
-    </Reference>
-    <Reference Include="CommonUtils">
-      <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/CommonUtils.dll</HintPath>
-    </Reference>
-    <Reference Include="GameDataDefine">
-      <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/GameDataDefine.dll</HintPath>
-    </Reference>
-    <Reference Include="GameDataRuntime">
-      <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/GameDataRuntime.dll</HintPath>
-    </Reference>
     <Reference Include="Google.Protobuf">
       <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/Google.Protobuf.dll</HintPath>
-    </Reference>
-    <Reference Include="Logger">
-      <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/Logger.dll</HintPath>
-    </Reference>
-    <Reference Include="ResourceCache">
-      <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/ResourceCache.dll</HintPath>
-    </Reference>
-    <Reference Include="ResourceCacheBehaviour">
-      <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/ResourceCacheBehaviour.dll</HintPath>
-    </Reference>
-    <Reference Include="SequenceLine">
-      <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/SequenceLine.dll</HintPath>
-    </Reference>
-    <Reference Include="StateController">
-      <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/StateController.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe">
-      <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Memory">
-      <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/System.Memory.dll</HintPath>
     </Reference>
     <Reference Include="System.Buffers">
       <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/System.Buffers.dll</HintPath>
     </Reference>
-    <Reference Include="ProtobufMessage">
-      <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/ProtobufMessage.dll</HintPath>
+    <Reference Include="System.Memory">
+      <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>F:/Unity/NullspaceKay/UnityProj/Assets/Plugins/System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>F:/Unity/NullspaceKay/UnityProj/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
@@ -718,6 +685,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{7A923948-FB1B-6207-A781-9734FAF5E43D}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{69B6C8F0-A092-6A6A-098C-0C119DFDB7A6}</Project>
       <Name>Assembly-CSharp</Name>

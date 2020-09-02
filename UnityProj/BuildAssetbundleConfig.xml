@@ -1,0 +1,7 @@
+<root>
+	<BuildAssetbundleConfigs>
+		<BuildAssetbundleConfig Path="Prefabs/Test1" Altas="false" />
+		<BuildAssetbundleConfig Path="Prefabs/Test2" Altas="false" />
+		<BuildAssetbundleConfig Path="Prefabs/Test2/Test3" Altas="false" />
+	</BuildAssetbundleConfigs>
+</root>
