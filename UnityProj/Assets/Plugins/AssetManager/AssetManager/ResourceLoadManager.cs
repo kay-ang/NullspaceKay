@@ -1,41 +1,36 @@
-﻿using System;
+﻿#if UNITY_EDITOR
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEditor;
+using UnityEngine;
 
 namespace Nullspace
 {
-    public class ResourceLoadManager
+    public partial class ResourceLoadManager
     {
-        private static Dictionary<string, ResourceItem> mResourceCache = new Dictionary<string, ResourceItem>();
-        
-        public static ResourceItem LoadAssetbundle(string assetbundleName)
+        /// <summary>
+        /// 指定路径 加载 资源
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="assetbundleName"></param>
+        /// <param name="assetName"></param>
+        /// <param name="releaseAb"></param>
+        /// <returns></returns>
+        public static T LoadAsset<T>(string assetPath) where T : UnityEngine.Object
         {
-            if (mResourceCache.ContainsKey(assetbundleName))
-            {
-                return mResourceCache[assetbundleName];
-            }
-            else
-            {
-
-            }
-            return null;
+            return AssetDatabase.LoadAssetAtPath<T>(assetPath);
         }
 
-        public static void LoadPrefab()
+        public static T InstancePrefab<T>(string assetPath) where T : UnityEngine.Object
         {
-
-        }
-
-        public static void LoadAsset<T>(string assetbundleName, string assetName, bool releaseAb = false)
-        {
-
-        }
-
-        public static void InstancePrefab(string assetbundleName, string assetName, bool releaseAb = false)
-        {
-
+            T t = LoadAsset<T>(assetPath);
+            return GameObject.Instantiate(t);
         }
     }
 }
+
+#endif

@@ -38,7 +38,7 @@ namespace Nullspace
 
     public class ResourceItem : ResourceRef
     {
-        protected AssetBundle mAb;
+        public AssetBundle Ab;
         protected List<ResourceItem> mDependencies;
 
         public ResourceItem(AssetBundle mAb)
@@ -67,10 +67,10 @@ namespace Nullspace
 
         public override void Destroy()
         {
-            if (mAb != null)
+            if (Ab != null)
             {
-                mAb.Unload(false);
-                mAb = null;
+                Ab.Unload(false);
+                Ab = null;
                 Resources.UnloadUnusedAssets();
             }
         }
