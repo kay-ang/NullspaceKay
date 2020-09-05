@@ -70,6 +70,7 @@ public class World : MonoBehaviour
         if (GUILayout.Button("Load Ab"))
         {
             BundleManager.Instance.LoadBundleAsync("prefabs_test1.hd", null);
+            BundleManager.Instance.LoadBundleSync("prefabs_test1.hd");
         }
         if (GUILayout.Button("Unload Ab"))
         {

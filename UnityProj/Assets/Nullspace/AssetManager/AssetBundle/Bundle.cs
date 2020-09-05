@@ -10,23 +10,35 @@ namespace Nullspace
 
     public class Bundle : BundleRef
     {
+        // ab 包名称
+        public string BundleName;
         // 对应的AB包
         public AssetBundle Ab;
         // 是否通过 被依赖项 被加载：true，可能自身依赖的AB未被加载；false，依赖的AB必定被加载进来
         public bool IsLoadedByDpendenced;
+        public bool IsAsyncLoading;
         // 全部依赖的ab包，包括间接ab包
         protected List<Bundle> mDependencies;
-
-        public Bundle()
+        
+        public Bundle(string bundleName) : base()
         {
             Ab = null;
             IsLoadedByDpendenced = true;
             mDependencies = new List<Bundle>();
         }
 
-        public Bundle(AssetBundle ab) : this()
+        public Bundle(string bundleName, AssetBundle ab) : this(bundleName)
         {
             Ab = ab;
+        }
+
+        internal void Sync(Action<Bundle> sync)
+        {
+            foreach (Bundle bundle in mDependencies)
+            {
+                sync(bundle);
+            }
+            sync(this);
         }
 
         public void AddDependece(Bundle dependence)

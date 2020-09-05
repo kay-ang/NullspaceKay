@@ -75,6 +75,25 @@ namespace Nullspace
             return LoadBundle(bundleName, false);
         }
 
+        protected void SyncInterruptAsync(Bundle bundle)
+        {
+            if (bundle != null)
+            {
+                // 先异步(异步未加载完)，再同步加载 处理
+                if (bundle.IsAsyncLoading)
+                {
+                    // 同步打断异步
+                    AssetBundleCreateRequest asyncOperation = GetAssetBundleCreateRequest(bundle.BundleName);
+                    if (asyncOperation != null)
+                    {
+                        bundle.Ab = asyncOperation.assetBundle;
+                        asyncOperation.assetBundle.LoadAsset<_EmptyAsset>("");
+                        // RemoveAsyncOperation(bundleName);
+                    }
+                }
+            }
+        }
+
         /// <summary>
         /// 直接加载 
         /// </summary>
@@ -90,6 +109,7 @@ namespace Nullspace
                 {
                     rootBundle = CreateBundle(bundleName, false, isAsync); // 创建 bundle
                 }
+
                 SetIsDependence(bundleName, false);
                 rootBundle.AddRef(); // 引用 + 1
                 string[] bundles = GetAllDependencies(bundleName); // 获取所有依赖ab
@@ -105,7 +125,11 @@ namespace Nullspace
                 }
             }
             DebugUtils.Assert(IsContain(bundleName) && !IsDependence(bundleName), string.Format("{0} wrong", bundleName));
-            return mBundleCaches[bundleName];
+            if (!isAsync) // 同步时，才检查是否存在异步加载的AB
+            {
+                rootBundle.Sync(SyncInterruptAsync);
+            }
+            return rootBundle;
         }
 
         private string[] GetAllDependencies(string bundleName)
@@ -180,7 +204,8 @@ namespace Nullspace
             if (isAsync)
             {
                 AssetBundleCreateRequest createRequest = AssetBundle.LoadFromFileAsync(FormatAbPath(bundleName));
-                bundle = new Bundle(null);
+                bundle = new Bundle(bundleName, null);
+                bundle.IsAsyncLoading = true;
                 createRequest.completed += (asyncOperation) => 
                                         {
                                             DebugUtils.Assert(asyncOperation.isDone, "wrong " + bundleName);
@@ -190,6 +215,7 @@ namespace Nullspace
                                             if (cacheBundle != null)
                                             {
                                                 cacheBundle.Ab = createRequest.assetBundle;
+                                                bundle.IsAsyncLoading = false;
                                             }
                                             else
                                             {
@@ -201,15 +227,9 @@ namespace Nullspace
             }
             else
             {
-                // 同步打断异步
-                AssetBundleCreateRequest asyncOperation = GetAssetBundleCreateRequest(bundleName);
-                if (asyncOperation != null)
-                {
-                    asyncOperation.assetBundle.LoadAsset<_EmptyAsset>("");
-                    // RemoveAsyncOperation(bundleName);
-                }
-                AssetBundle ab = asyncOperation.assetBundle; //AssetBundle.LoadFromFile(FormatAbPath(bundleName));
-                bundle = new Bundle(ab);
+                AssetBundle ab = AssetBundle.LoadFromFile(FormatAbPath(bundleName));
+                bundle = new Bundle(bundleName, ab);
+                bundle.IsAsyncLoading = false;
             }
             bundle.IsLoadedByDpendenced = isDependence;
             mBundleCaches.Add(bundleName, bundle);
