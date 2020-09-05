@@ -1,0 +1,8 @@
+﻿{
+  "name": "ClientNetwork",
+  "references": [
+    "CommonUtils",
+    "GameDataRuntime",
+    "StateController"
+  ]
+}

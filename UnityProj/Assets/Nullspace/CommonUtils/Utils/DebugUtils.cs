@@ -13,11 +13,11 @@ namespace Nullspace
 
     public class DebugUtils
     {
-        private static Action<InfoType, string> LogAction = null;
+        private static event Action<InfoType, string> LogAction;
 
-        public static void SetLogAction(Action<InfoType, string> logAction)
+        public static void AddLogAction(Action<InfoType, string> logAction)
         {
-            LogAction = logAction;
+            LogAction += logAction;
         }
 
         public static void Assert(bool isTrue, string message)
@@ -31,18 +31,12 @@ namespace Nullspace
 
         public static void Log(InfoType infoType, string info)
         {
-            if (LogAction != null)
-            {
-                LogAction(infoType, info);
-            }
+            LogAction?.Invoke(infoType, info);
         }
 
         public static void Log(InfoType infoType, string format, params object[] args)
         {
-            if (LogAction != null)
-            {
-                LogAction(infoType, string.Format(format, args));
-            }
+            LogAction?.Invoke(infoType, string.Format(format, args));
         }
     }
 }

@@ -9,11 +9,11 @@ namespace Nullspace
     public partial class ResourceLoadManager
     {
         private static AssetBundleManifest mManifest;
-        private static Dictionary<string, ResourceItem> mResourceCache;
+        private static Dictionary<string, Bundle> mResourceCache;
 
         static ResourceLoadManager()
         {
-            mResourceCache = new Dictionary<string, ResourceItem>();
+            mResourceCache = new Dictionary<string, Bundle>();
             AssetBundle ab = AssetBundle.LoadFromFile("AssetBundle");
             mManifest = ab.LoadAsset<AssetBundleManifest>("AssetBundleManifest");
         }
@@ -37,7 +37,7 @@ namespace Nullspace
             }
         }
 
-        private static ResourceItem LoadAssetbundle(string assetbundleName)
+        private static Bundle LoadAssetbundle(string assetbundleName)
         {
             if (mResourceCache.ContainsKey(assetbundleName))
             {
@@ -55,14 +55,14 @@ namespace Nullspace
         {
             if (mResourceCache.ContainsKey(assetbundleName))
             {
-                ResourceItem item = mResourceCache[assetbundleName];
+                Bundle item = mResourceCache[assetbundleName];
                 item.DelRef();
             }
         }
 
         public static T LoadAsset<T>(string assetbundleName, string assetName, bool releaseAb = false) where T : UnityEngine.Object
         {
-            ResourceItem item = LoadAssetbundle(assetbundleName);
+            Bundle item = LoadAssetbundle(assetbundleName);
             T t = item.Ab.LoadAsset<T>(assetName);
             return t;
         }

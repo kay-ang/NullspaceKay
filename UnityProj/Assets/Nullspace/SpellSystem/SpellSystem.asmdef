@@ -1,0 +1,8 @@
+﻿{
+  "name": "SpellSystem",
+  "references": [
+    "CommonUtils",
+    "GameDataRuntime",
+    "SequenceLine"
+  ]
+}

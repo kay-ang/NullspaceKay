@@ -26,6 +26,7 @@ public class World : MonoBehaviour
 
     void Awake()
     {
+        DebugUtils.AddLogAction(DebugLog);
         Properties cfg = Properties.Create("config.txt");
         InitializeClient(cfg);
         InitializeLogger(cfg);
@@ -34,6 +35,13 @@ public class World : MonoBehaviour
         SequenceManager.Instance.Clear();
         IntEventDispatcher.Cleanup();
         NetworkEventHandler.Initialize();
+        // 资源
+        BundleManager.Instance.Initialize(Application.streamingAssetsPath + "/PC", "PC");
+    }
+
+    void DebugLog(InfoType type, string info)
+    {
+        Debug.Log(info);
     }
 
     // Update is called once per frame
@@ -57,4 +65,15 @@ public class World : MonoBehaviour
         Logger.Instance.Stop();
     }
 
+    private void OnGUI()
+    {
+        if (GUILayout.Button("Load Ab"))
+        {
+            BundleManager.Instance.LoadBundleAsync("prefabs_test1.hd", null);
+        }
+        if (GUILayout.Button("Unload Ab"))
+        {
+            BundleManager.Instance.UnloadBundle("prefabs_test1.hd"); 
+        }
+    }
 }

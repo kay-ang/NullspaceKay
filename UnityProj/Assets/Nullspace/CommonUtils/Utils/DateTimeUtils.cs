@@ -34,7 +34,7 @@ namespace Nullspace
 
         public static DateTime GetTime(long timeStamp)
         {
-            DateTime startTime = TimeZone.CurrentTimeZone.ToLocalTime(ZERO);
+            DateTime startTime = TimeZoneInfo.ConvertTime(ZERO, TimeZoneInfo.Local);
             return startTime.AddSeconds(timeStamp);
         }
 

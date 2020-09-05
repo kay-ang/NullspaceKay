@@ -1,0 +1,18 @@
+﻿{
+  "name": "UnityMile",
+  "references": [
+    "CommonUtils",
+    "ClientNetwork",
+    "AssetManager",
+    "Algorithm",
+    "GameDataRuntime",
+    "Logger",
+    "ResourceCache",
+    "SequenceLine",
+    "SpellSystem",
+    "StateController",
+    "GameDataDefine",
+    "ResourceCacheBehaviour",
+    "ProtobufMessage"
+  ]
+}

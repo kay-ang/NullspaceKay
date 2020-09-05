@@ -1,0 +1,8 @@
+﻿{
+  "name": "AssetManager",
+  "references": [
+    "CommonUtils",
+    "GameDataRuntime",
+    "SequenceLine"
+  ]
+}

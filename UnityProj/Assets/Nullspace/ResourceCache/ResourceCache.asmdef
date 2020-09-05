@@ -1,0 +1,7 @@
+﻿{
+  "name": "ResourceCache",
+  "references": [
+    "CommonUtils",
+    "GameDataRuntime"
+  ]
+}

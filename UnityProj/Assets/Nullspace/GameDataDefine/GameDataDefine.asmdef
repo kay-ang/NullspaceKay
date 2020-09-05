@@ -1,0 +1,7 @@
+﻿{
+  "name": "GameDataDefine",
+  "references": [
+    "CommonUtils",
+    "GameDataRuntime"
+  ]
+}

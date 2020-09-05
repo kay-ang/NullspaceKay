@@ -326,8 +326,7 @@ namespace Nullspace
 
         protected void EndConnectCallback(IAsyncResult ar)
         {
-            var state = (NetworkClient)ar.AsyncState;
-            Socket client = state.mClientSocket;
+            var client = (Socket)(ar.AsyncState);
             try
             {
                 client.EndConnect(ar);

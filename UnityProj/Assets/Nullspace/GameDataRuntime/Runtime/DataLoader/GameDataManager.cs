@@ -191,11 +191,10 @@ namespace Nullspace
         {
             ClearAllData();
             mGameDataTypes.Clear();
-            
-            // Assembly[] asses = AppDomain.CurrentDomain.GetAssemblies();
-            // foreach (Assembly ass in asses)
+            Assembly[] asses = AppDomain.CurrentDomain.GetAssemblies();
+            foreach (Assembly ass in asses)
             {
-                Assembly ass = typeof(EmptyGameData).Assembly;
+                DebugUtils.Log(InfoType.Warning, ass.FullName);
                 Type[] types = ass.GetTypes();
                 Type gameDataGenericType = typeof(GameData<>);
                 Type gameDataType = typeof(GameData);
