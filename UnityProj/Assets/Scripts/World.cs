@@ -35,8 +35,7 @@ public class World : MonoBehaviour
         SequenceManager.Instance.Clear();
         IntEventDispatcher.Cleanup();
         NetworkEventHandler.Initialize();
-        // 资源
-        BundleManager.Instance.Initialize(Application.streamingAssetsPath + "/PC", "PC");
+        ResourceManager.Initialize(ResourceLoadMode.EDITOR, Application.streamingAssetsPath + "/PC", "PC");
     }
 
     void DebugLog(InfoType type, string info)
@@ -69,12 +68,12 @@ public class World : MonoBehaviour
     {
         if (GUILayout.Button("Load Ab"))
         {
-            BundleManager.Instance.LoadBundleAsync("prefabs_test1.hd", null);
-            BundleManager.Instance.LoadBundleSync("prefabs_test1.hd");
+            GameObject go = ResourceManager.InstanceGameObject("Prefabs/Test1", "1", true);
         }
+
         if (GUILayout.Button("Unload Ab"))
         {
-            BundleManager.Instance.UnloadBundle("prefabs_test1.hd"); 
+            ResourceManager.UnloadBundle("prefabs_test1");
         }
     }
 }

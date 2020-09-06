@@ -1,4 +1,5 @@
 ﻿using Nullspace;
+using System.IO;
 using UnityEditor;
 using UnityEngine;
 
@@ -166,8 +167,33 @@ public class BuildAssetbundle
     private static void Build()
     {
         AssetbundleTree.SetAssetABNames();
+        Clear(BuildPath);
+        Directory.CreateDirectory(BuildPath);
+        // AssetDatabase.CreateFolder(Path.GetDirectoryName(BuildPath), Path.GetFileName(BuildPath));
+        AssetDatabase.Refresh();
         BuildPipeline.BuildAssetBundles(BuildPath, BuildAssetBundleOptions, BuildTarget);
+        AssetDatabase.Refresh();
         // BuildPipeline.BuildPlayer(EditorBuildSettingsScene.GetActiveSceneList(EditorBuildSettings.scenes), BuildPath, BuildTarget, BuildOptions);
+    }
+
+
+    private static void Clear(string dir)
+    {
+        if (!Directory.Exists(dir))
+        {
+            return;
+        }
+        string[] subDirs = Directory.GetDirectories(dir);
+        foreach (string subDir in subDirs)
+        {
+            Clear(subDir);
+        }
+        string[] files = Directory.GetFiles(dir);
+        foreach (string file in files)
+        {
+            File.Delete(file);
+        }
+        Directory.Delete(dir);
     }
 
     private static void SetPCVariables()

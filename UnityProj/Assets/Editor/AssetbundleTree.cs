@@ -177,7 +177,7 @@ public class AssetbundleTree
                     string filePath = fileItem.FilePath;
                     AssetImporter importer = AssetImporter.GetAtPath(filePath); // "assets/**"
                     importer.assetBundleName = abName;
-                    importer.assetBundleVariant = "HD";
+                    importer.assetBundleVariant = null;
                     if (item.NearestConfigParent.Altas)
                     {
                         TextureImporter texImporter = importer as TextureImporter;
