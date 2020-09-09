@@ -1,0 +1,15 @@
+{
+    "name": "OcclusionCulling",
+    "references": [
+        "GUID:c8a34be2d9f23c34eae5472098999221"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
