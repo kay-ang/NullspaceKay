@@ -30,29 +30,29 @@ namespace Nullspace
             return string.Format("{0}/{1}", path, name);
         }
 
-        internal override GameObject InstanceGameObject(string path, string name, bool releaseAsset = true)
+        internal override GameObject InstanceGameObject(string path, string name)
         {
-            return base.InstanceGameObject(PrefabPath(path), PrefabName(name), releaseAsset);
+            return base.InstanceGameObject(PrefabPath(path), PrefabName(name));
         }
 
-        internal override void InstanceGameObjectAsync(string path, string name, Action<GameObject> callback, bool releaseAsset = true)
+        internal override void InstanceGameObjectAsync(string path, string name, Action<GameObject> callback)
         {
-            base.InstanceGameObjectAsync(PrefabPath(path), PrefabName(name), callback, releaseAsset);
+            base.InstanceGameObjectAsync(PrefabPath(path), PrefabName(name), callback);
         }
 
-        internal override void InstanceGameObjectAsync<T>(string path, string name, Action<GameObject, T> callback, T t, bool releaseAsset = true)
+        internal override void InstanceGameObjectAsync<T>(string path, string name, Action<GameObject, T> callback, T t)
         {
-            base.InstanceGameObjectAsync(PrefabPath(path), PrefabName(name), callback, t, releaseAsset);
+            base.InstanceGameObjectAsync(PrefabPath(path), PrefabName(name), callback, t);
         }
 
-        internal override void InstanceGameObjectAsync<T, U>(string path, string name, Action<GameObject, T, U> callback, T t, U u, bool releaseAsset = true)
+        internal override void InstanceGameObjectAsync<T, U>(string path, string name, Action<GameObject, T, U> callback, T t, U u)
         {
-            base.InstanceGameObjectAsync(PrefabPath(path), PrefabName(name), callback, t, u, releaseAsset);
+            base.InstanceGameObjectAsync(PrefabPath(path), PrefabName(name), callback, t, u);
         }
 
-        internal override void InstanceGameObjectAsync<T, U, W>(string path, string name, Action<GameObject, T, U, W> callback, T t, U u, W w, bool releaseAsset = true)
+        internal override void InstanceGameObjectAsync<T, U, W>(string path, string name, Action<GameObject, T, U, W> callback, T t, U u, W w)
         {
-            base.InstanceGameObjectAsync(PrefabPath(path), PrefabName(name), callback, t, u, w, releaseAsset);
+            base.InstanceGameObjectAsync(PrefabPath(path), PrefabName(name), callback, t, u, w);
         }
 
 
@@ -85,7 +85,7 @@ namespace Nullspace
             callback(asset, u, v, w);
         }
 
-        internal override void UnloadBundle(string path)
+        internal override void UnloadBundle(string path, bool unloadLoadedAssets)
         {
             
         }

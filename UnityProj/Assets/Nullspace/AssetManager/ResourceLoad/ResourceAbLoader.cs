@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
-using Object = UnityEngine.Object;
 
 namespace Nullspace
 {
@@ -76,9 +70,9 @@ namespace Nullspace
             mBundleManager.LoadBundleAsync(FormatAbName(path), load);
         }
 
-        internal override void UnloadBundle(string path)
+        internal override void UnloadBundle(string path, bool unloadLoadedAssets)
         {
-            mBundleManager.UnloadBundle(FormatAbName(path));
+            mBundleManager.UnloadBundle(FormatAbName(path), unloadLoadedAssets);
         }
     }
 }

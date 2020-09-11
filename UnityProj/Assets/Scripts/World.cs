@@ -35,7 +35,7 @@ public class World : MonoBehaviour
         SequenceManager.Instance.Clear();
         IntEventDispatcher.Cleanup();
         NetworkEventHandler.Initialize();
-        ResourceManager.Initialize(ResourceLoadMode.EDITOR, Application.streamingAssetsPath + "/PC", "PC");
+        ResourceManager.Initialize(ResourceLoadMode.AB, Application.streamingAssetsPath + "/PC", "PC");
     }
 
     void DebugLog(InfoType type, string info)
@@ -66,14 +66,15 @@ public class World : MonoBehaviour
 
     private void OnGUI()
     {
+        string abPath = "Data/Prefabs";
         if (GUILayout.Button("Load Ab"))
         {
-            GameObject go = ResourceManager.InstanceGameObject("Prefabs/Test1", "1", true);
+            GameObject go = ResourceManager.InstanceGameObject(abPath, "Indian");
         }
 
         if (GUILayout.Button("Unload Ab"))
         {
-            ResourceManager.UnloadBundle("prefabs_test1");
+            ResourceManager.UnloadBundle(abPath, true);
         }
     }
 }

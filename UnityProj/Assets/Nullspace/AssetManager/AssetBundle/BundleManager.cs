@@ -28,35 +28,39 @@ namespace Nullspace
 
         internal void Initialize(string abDir, string manifestBundleName)
         {
-            mABDir = abDir;
-            if (mManifest != null)
+            if (!mIsInitialized)
             {
-                Resources.UnloadAsset(mManifest);
-                mManifest = null;
-            }
-            if (mBundleCaches != null)
-            {
-                foreach (Bundle bundle in mBundleCaches.Values)
+                mABDir = abDir;
+                if (mManifest != null)
                 {
-                    bundle.Destroy();
+                    Resources.UnloadAsset(mManifest);
+                    mManifest = null;
                 }
+                if (mBundleCaches != null)
+                {
+                    foreach (Bundle bundle in mBundleCaches.Values)
+                    {
+                        bundle.Destroy(true);
+                    }
+                }
+                mBundleAsyncCaches = new Dictionary<string, AssetBundleCreateRequest>();
+                mBundleCaches = new Dictionary<string, Bundle>();
+                AssetBundle ab = AssetBundle.LoadFromFile(FormatAbPath(manifestBundleName));
+                mManifest = ab.LoadAsset<AssetBundleManifest>("AssetBundleManifest");
+                // 卸载 AssetBundle，不卸载 AssetBundleManifest
+                ab.Unload(false);
+                mIsInitialized = true;
             }
-            mBundleAsyncCaches = new Dictionary<string, AssetBundleCreateRequest>();
-            mBundleCaches = new Dictionary<string, Bundle>();
-            AssetBundle ab = AssetBundle.LoadFromFile(FormatAbPath(manifestBundleName));
-            mManifest = ab.LoadAsset<AssetBundleManifest>("AssetBundleManifest");
-            // 卸载 AssetBundle，不卸载 AssetBundleManifest
-            ab.Unload(false);
-            mIsInitialized = true;
+
         }
 
-        internal void UnloadBundle(string bundleName)
+        internal void UnloadBundle(string bundleName, bool unloadLoadedAssets)
         {
             if (mIsInitialized)
             {
                 if (IsContain(bundleName))
                 {
-                    bool isDestroy = GetBundle(bundleName).DelRef();
+                    bool isDestroy = GetBundle(bundleName).DelRef(unloadLoadedAssets);
                     if (isDestroy)
                     {
                         DestroyBundle(bundleName);

@@ -1,0 +1,42 @@
+ManifestFileVersion: 0
+CRC: 3793615166
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: e15597139ab616417bc2aa1ee251be4a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 35dbc7de98fc116379bec05216a2c39d
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 90
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 100bcc9db4f7fc64e95ecc1abca8c97d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 90d922b6196aab34697b544f28239ee2, type: 3}
+- Class: 137
+  Script: {instanceID: 0}
+Assets:
+- Assets/Data/Prefabs/Walk Controller.controller
+- Assets/Data/Prefabs/Indian.prefab
+- Assets/Data/Prefabs/Walk.anim
+Dependencies: []

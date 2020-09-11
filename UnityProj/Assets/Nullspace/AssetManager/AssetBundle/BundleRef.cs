@@ -17,18 +17,18 @@ namespace Nullspace
             return mRefCount;
         }
 
-        public virtual bool DelRef()
+        public virtual bool DelRef(bool unloadLoadedAssets)
         {
             mRefCount--;
             if (mRefCount <= 0)
             {
                 mIsDestroyed = true;
-                Destroy();
+                Destroy(unloadLoadedAssets);
             }
             return mIsDestroyed;
         }
 
-        public virtual void Destroy()
+        public virtual void Destroy(bool unloadLoadedAssets)
         {
             
         }

@@ -1,13 +1,16 @@
 ManifestFileVersion: 0
-CRC: 2294125873
+CRC: 4054153889
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: prefabs_test2_test3
+      Name: prefabs_test2
       Dependencies: {}
     Info_1:
-      Name: prefabs_test2
+      Name: prefabs_test2_test3
       Dependencies: {}
     Info_2:
       Name: prefabs_test1
+      Dependencies: {}
+    Info_3:
+      Name: data_prefabs
       Dependencies: {}

@@ -142,8 +142,12 @@ public class AssetbundleTree
                     origin.NearestConfigParent = item;
                     break;
                 }
+                item = null;
                 dirName = Path.GetDirectoryName(dirName).Replace("\\", "/");
-                item = dirItems[dirName];
+                if (dirItems.ContainsKey(dirName))
+                {
+                    item = dirItems[dirName];
+                }
             }
         }
     }

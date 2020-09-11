@@ -54,34 +54,34 @@ namespace Nullspace
             mResourceLoader.LoadAssetAsync<T, U, V, W>(path, name, callback, u, v, w);
         }
 
-        public static GameObject InstanceGameObject(string path, string name, bool releaseAsset = true)
+        public static GameObject InstanceGameObject(string path, string name)
         {
-            return mResourceLoader.InstanceGameObject(path, name, releaseAsset);
+            return mResourceLoader.InstanceGameObject(path, name);
         }
 
-        public static void InstanceGameObjectAsync(string path, string name, Action<GameObject> callback, bool releaseAsset = true)
+        public static void InstanceGameObjectAsync(string path, string name, Action<GameObject> callback)
         {
-            mResourceLoader.InstanceGameObjectAsync(path, name, callback, releaseAsset);
+            mResourceLoader.InstanceGameObjectAsync(path, name, callback);
         }
 
-        public static void InstanceGameObjectAsync<T>(string path, string name, Action<GameObject, T> callback, T t, bool releaseAsset = true)
+        public static void InstanceGameObjectAsync<T>(string path, string name, Action<GameObject, T> callback, T t)
         {
-            mResourceLoader.InstanceGameObjectAsync(path, name, callback, t, releaseAsset);
+            mResourceLoader.InstanceGameObjectAsync(path, name, callback, t);
         }
 
-        public static void InstanceGameObjectAsync<T, U>(string path, string name, Action<GameObject, T, U> callback, T t, U u, bool releaseAsset = true)
+        public static void InstanceGameObjectAsync<T, U>(string path, string name, Action<GameObject, T, U> callback, T t, U u)
         {
-            mResourceLoader.InstanceGameObjectAsync(path, name, callback, t, u, releaseAsset);
+            mResourceLoader.InstanceGameObjectAsync(path, name, callback, t, u);
         }
 
-        public static void InstanceGameObjectAsync<T, U, W>(string path, string name, Action<GameObject, T, U, W> callback, T t, U u, W w, bool releaseAsset = true)
+        public static void InstanceGameObjectAsync<T, U, W>(string path, string name, Action<GameObject, T, U, W> callback, T t, U u, W w)
         {
-            mResourceLoader.InstanceGameObjectAsync(path, name, callback, t, u, w, releaseAsset);
+            mResourceLoader.InstanceGameObjectAsync(path, name, callback, t, u, w);
         }
 
-        public static void UnloadBundle(string path)
+        public static void UnloadBundle(string path, bool unloadLoadedAssets)
         {
-            mResourceLoader.UnloadBundle(path);
+            mResourceLoader.UnloadBundle(path, unloadLoadedAssets);
         }
 
         public static void UnloadUnusedAssets()
@@ -93,7 +93,6 @@ namespace Nullspace
         {
             mResourceLoader.UnloadAsset(assetTarget);
         }
-
     }
 }
 

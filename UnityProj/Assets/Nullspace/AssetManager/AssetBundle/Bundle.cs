@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
@@ -61,31 +58,31 @@ namespace Nullspace
             return cnt;
         }
 
-        public override bool DelRef()
+        public override bool DelRef(bool unloadLoadedAssets)
         {
-            bool isDestroy = base.DelRef();
+            bool isDestroy = base.DelRef(unloadLoadedAssets);
             foreach (Bundle item in mDependencies)
             {
-                item.DelRef();
+                item.DelRef(unloadLoadedAssets);
             }
             return isDestroy;
         }
 
-        protected void DestroyAb()
+        protected void DestroyAb(bool unloadLoadedAssets)
         {
             if (Ab != null)
             {
-                Ab.Unload(true);
+                Ab.Unload(unloadLoadedAssets);
                 Ab = null;
                 Resources.UnloadUnusedAssets();
             }
         }
 
-        public override void Destroy()
+        public override void Destroy(bool unloadLoadedAssets)
         {
-            DestroyAb();
+            DestroyAb(unloadLoadedAssets);
             mDependencies.Clear();
-            base.Destroy();
+            base.Destroy(unloadLoadedAssets);
         }
 
         public T LoadAsset<T>(string name) where T : Object
