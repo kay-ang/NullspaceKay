@@ -1,0 +1,15 @@
+{
+    "name": "NullEditor",
+    "references": [
+        "GUID:e4463b23a5f633c458498c4cb239de53"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
