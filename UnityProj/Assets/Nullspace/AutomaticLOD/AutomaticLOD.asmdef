@@ -1,7 +1,8 @@
 {
     "name": "AutomaticLOD",
     "references": [
-        "GUID:c8a34be2d9f23c34eae5472098999221"
+        "GUID:c8a34be2d9f23c34eae5472098999221",
+        "GUID:21c3726d63230f148b38a4d4a79a4168"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

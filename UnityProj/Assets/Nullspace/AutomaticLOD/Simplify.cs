@@ -9,17 +9,6 @@ using UnityEngine;
 /// </summary>
 namespace Nullspace
 {
-    
-    public class LODVertex
-    {
-
-    }
-
-    public class LODTriangle
-    {
-
-    }
-
     public class Simplify : MonoBehaviour
     {
         private Mesh meshOut;
@@ -34,7 +23,7 @@ namespace Nullspace
             {
                 return;
             }
-            UniqueData();
+            // UniqueData();
 
         }
 

@@ -49,6 +49,17 @@ namespace Nullspace
             return groupResult;
         }
 
+        public List<T> Objects
+        {
+            set
+            {
+                foreach (T t in value)
+                {
+                    Add(t);
+                }
+            }
+        }
+
         private List<T> mObjects;
         private Dictionary<string, List<int>> mGroups;
     }
