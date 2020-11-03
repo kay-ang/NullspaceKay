@@ -166,6 +166,7 @@ namespace Nullspace
         private void Build()
         {
             int stackptr = 0;
+            mNumNodes = mNumLeafs = 0;
             uint Untouched    = 0xffffffff;
             uint TouchedTwice = 0xfffffffd;
             PREALLOC[stackptr].Start = 0;
@@ -179,48 +180,60 @@ namespace Nullspace
                 uint start = bnode.Start;
                 uint end = bnode.End;
                 uint nPrims = end - start;
-                mNumNodes++;
                 BVHFlatNode node = new BVHFlatNode();
                 node.StartIndex = start;
                 node.LeafCount = nPrims;
                 node.RightOffset = Untouched;
                 BVHBox bb = new BVHBox(mBuildPrims[(int)start].GetBBox().Min, mBuildPrims[(int)start].GetBBox().Max);
                 BVHBox bc = new BVHBox(mBuildPrims[(int)start].GetCentroid());
-                for(uint p = start + 1; p < end; ++p)
+                // 计算 bnode 的 BBox
+                for (uint p = start + 1; p < end; ++p)
                 {
                     bb.ExpandToInclude(mBuildPrims[(int)p].GetBBox());
                     bc.ExpandToInclude(mBuildPrims[(int)p].GetCentroid());
                 }
                 node.Box = bb;
+                // 节点数小于叶节点设置的数量，不继续划分，叶节点数量增1
                 if(nPrims <= mNodeMaxLeafSize)
                 {
                     node.RightOffset = 0;
                     mNumLeafs++;
                 }
-
+                // 添加
+                mNumNodes++; // 实际上为 buildnodes 的Count
                 buildnodes.Add(node);
                 // 记录父节点关于右孩子结点相对父结点的偏移值mRightOffset
                 // 第一次为左孩子，相对父结点的偏移值为1
                 // 每个父节点最多被两次 hit
-                if(bnode.Parent != 0xfffffffc)
+                // 后面入栈：先右孩子再左孩子
+                // 执行出站：先出左孩子再出右孩子
+                // 父节点最开始设置为 RightOffset = Untouched = 0xffffffff
+                // 执行到 左孩子时 RightOffset -= 1 = 0xfffffffe
+                // 执行到 右孩子时 RightOffset -= 1 = 0xfffffffd = TouchedTwice
+                if (bnode.Parent != 0xfffffffc)
                 {
                     buildnodes[(int)bnode.Parent].RightOffset--;
                     if( buildnodes[(int)bnode.Parent].RightOffset == TouchedTwice)
                     {
+                        // 此时处理的是右孩子，记录右孩子的起始索引
                         buildnodes[(int)bnode.Parent].RightOffset = (uint)mNumNodes - 1 - bnode.Parent;
                     }
                 }
+
+                // 叶节点
                 if (node.RightOffset == 0)
                 {
                     continue;
                 }
                 // 选择合适的分割维度
                 uint split_dim = (uint)bc.MaxDimension();
+                // 计算分割值
                 float split_coord = 0.5f * (bc.Min[(int)split_dim] + bc.Max[(int)split_dim]);
                 uint mid = start;
                 // 交换 start 和 end 之间 的数据
                 for(uint i = start; i < end; ++i)
                 {
+                    // 将 小于 分割值 放 左边
                     if(mBuildPrims[(int)i].GetCentroid()[(int)split_dim] < split_coord ) 
                     {
                         BVHObject temp = mBuildPrims[(int)i];
@@ -229,6 +242,7 @@ namespace Nullspace
                         ++mid;
                     }
                 }
+                // 全部大于 或者 全部小于 则 取中间平分两块
                 if(mid == start || mid == end)
                 {
                     mid = start + (end - start) / 2;
